@@ -91,6 +91,31 @@ module processor(
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
+    imem insnmem(
+        .address    (address_imem),            // address of data
+        .clock      (clock),                  // you may need to invert the clock
+        .q          (q_imem)   
+    )
+
+
+    regfile registerfile(
+        clock,
+        ctrl_writeEnable,
+        reset,
+        ctrl_writeReg,
+        ctrl_readRegA,
+        ctrl_readRegB,
+        data_writeReg,
+        data_readRegA,
+        data_readRegB
+    )
+    dmem datamem(
+        .address    (),       // address of data
+        .clock      (clock),                  // may need to invert the clock
+        .data	    (),    // data you want to write
+        .wren	    (),      // write enable
+        .q          ()    // data from dmem
+    )    
 	 
 
 endmodule
