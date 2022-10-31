@@ -91,14 +91,13 @@ module processor(
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
-    not not1(n_clock,clock)
     imem insnmem(
         .address    (address_imem),            // address of data
-        .clock      (n_clock),                  // you may need to invert the clock
+        .clock      (clock),                  // you may need to invert the clock
         .q          (q_imem)   
     )
 
-assign ctrl_writeReg = Rdst == 1? q_imem[12:17]:q_imem[18:23]     
+
     regfile registerfile(
         clock,
         ctrl_writeEnable,
