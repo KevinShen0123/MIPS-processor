@@ -91,6 +91,11 @@ module processor(
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
+    wire [31:0] pc_out;
+    wire [31:0] pc_next;
+
+    //PC component
+    pc pc_processor (.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
     
     
     
