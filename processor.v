@@ -86,14 +86,19 @@ module processor(
 
     // Regfile
     output ctrl_writeEnable;
-    output [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
+    output [4:0] 
+    \, ctrl_readRegA, ctrl_readRegB;
     output [31:0] data_writeReg;
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
-    pc pc1(pc_out, clock, reset, pc_in);
+
     
     
+    assign ctrl_writeReg = q_imem[31:27] == 5b'00000 ? q_imem[21:17]:q_imem[15:11];
+    assign ctrl_readRegA = q_imem[26:22]
+    assign ctrl_readRegB = q_imem[21:17]
+
 	 
 
 endmodule
