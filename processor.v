@@ -91,7 +91,7 @@ module processor(
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
-    
+    pc pc1(pc_out, clock, reset, pc_in);
     
     
 	 
