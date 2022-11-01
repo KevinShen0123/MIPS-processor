@@ -86,19 +86,19 @@ module processor(
 
     // Regfile
     output ctrl_writeEnable;
-<<<<<<< HEAD
+
     output [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
-=======
+
     output [4:0] ctrl_readRegA, ctrl_readRegB;
->>>>>>> 4d71b2b7f51ba1013ef11a2b771222b5319b95fd
+
     output [31:0] data_writeReg;
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
-<<<<<<< HEAD
+
 
     //PC & PC + 4
-=======
+
 
     
 
@@ -107,20 +107,19 @@ module processor(
     assign ctrl_readRegB = q_imem[21:17]
 
 
->>>>>>> 4d71b2b7f51ba1013ef11a2b771222b5319b95fd
+
     wire [31:0] pc_in, pc_out, insn_out;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(clock), .pc_in(pc_in));
     alu(pc_out, 32'd4, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, 1'b0);   
     
-<<<<<<< HEAD
+
     //Choose type (R/I)
 	assign ctrl_writeReg = q_imem[31:27] == 5b'00000 ? q_imem[21:17]:q_imem[15:11];
     assign ctrl_readRegA = q_imem[26:22]
     assign ctrl_readRegB = q_imem[21:17]
-=======
+
     
 
-	 
->>>>>>> 4d71b2b7f51ba1013ef11a2b771222b5319b95fd
+	
 
 endmodule
