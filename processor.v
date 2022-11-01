@@ -86,28 +86,27 @@ module processor(
 
     // Regfile
     output ctrl_writeEnable;
-    output [4:0] 
-    \, ctrl_readRegA, ctrl_readRegB;
+    output [4:0] ctrl_readRegA, ctrl_readRegB;
     output [31:0] data_writeReg;
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
-<<<<<<< HEAD
+
     pc pc1(pc_out, clock, reset, pc_in);
     
->>>>>>> 257adce21f912ad38d4946126d0a162c847f43d0
+
     assign ctrl_writeReg = q_imem[31:27] == 5b'00000 ? q_imem[21:17]:q_imem[15:11];
     assign ctrl_readRegA = q_imem[26:22]
     assign ctrl_readRegB = q_imem[21:17]
 
-=======
+
     wire [31:0] pc_in, pc_out, insn_out;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(clock), .pc_in(pc_in));
     alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, 1'b0);   
     pc pc1(pc_out, clock, reset, pc_in);
     
     
->>>>>>> 41ba218 (temp commit)
+
 	 
 
 endmodule
