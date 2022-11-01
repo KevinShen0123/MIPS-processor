@@ -92,9 +92,9 @@ module processor(
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
-
+    pc pc1(pc_out, clock, reset, pc_in);
     
-    
+>>>>>>> 257adce21f912ad38d4946126d0a162c847f43d0
     assign ctrl_writeReg = q_imem[31:27] == 5b'00000 ? q_imem[21:17]:q_imem[15:11];
     assign ctrl_readRegA = q_imem[26:22]
     assign ctrl_readRegB = q_imem[21:17]
