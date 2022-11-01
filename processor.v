@@ -137,15 +137,26 @@ module processor(
 
 
     //alu
-    // Kevin's Change
-	 wire isNotEqual, isLessThan, overflow;
-	 alu my_alu(data_readRegA, aluinput, q_imem[6:2], q_imem[11:7],data_writeReg, isNotEqual, isLessThan, overflow);//call alu
+     //alu
+    // Kevin's Change about R types instructions
+	 wire isNotEqual, isLessThan, overflow;//The parameter for alu
+	 wire [4:0] alu_opcode;//If it is R type, then we use q_imem[6:2], otherwise, set default to 00000;
+	 assign alu_opcode=q_imem[31:27]==5'b00101?5'b00000,q_imem[6:2];
+	 assign alu_opcode=q_imem[31:27]==5'b00111?5'b00000,q_imem[6:2];
+	 assign alu_opcode=q_imem[31:27]==5'b01000?5'b00000,q_imem[6:2];
+	 wire [31:0] data_reg_write;//set a temporary variable for the output for alu
+	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
+	 wire alu_flag;
 	 wire enableTwo;
-	 assign enableTwo=overflow?1:0;//check if overflow or not to determine change rstatus or not
+	 assign alu_flag=q_imem[31:27]==5'b00111?0:1;
+	 assign alu_flag=q_imem[31:27]==5'b01000?0:1;//judge whether we need alu in R type or not, if sw or lw, we do not need alu
+	 and and1(enableTwo,alu_flag, overflow);// 
 	 assign data_writeTwo=q_imem[31:27]==5'b00000?q_imem[6:2]==5'b00000?32'h0001:32'h0003:32'h0002;
 	 regfile(clock, enableTwo, ctrl_reset, 32'h001E,
 	ctrl_readRegA, ctrl_readRegB, data_writeTwo, data_readRegA,
-	data_readRegB);// call regfile to change rstatus
+	data_readRegB);// If we need alu and overflow happens, we call regfile to change r30 register by definition
+    assign data_writeReg=alu_flag?data_reg_write:32'h0000;//If we used alu, we set data_writeReg to alu output, otherwise default as 0;
+	 //and we will assign data_writeReg to a new value for I-type later.
 
     
 
