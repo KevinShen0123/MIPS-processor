@@ -91,9 +91,14 @@ module processor(
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
+<<<<<<< HEAD
     wire [31:0] pc_in, pc_out, insn_out;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(clock), .pc_in(pc_in));
     alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, 1'b0);   
+=======
+    pc pc1(pc_out, clock, reset, pc_in);
+    
+>>>>>>> 257adce21f912ad38d4946126d0a162c847f43d0
     
 	 
 
