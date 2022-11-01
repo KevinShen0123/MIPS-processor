@@ -98,17 +98,7 @@ module processor(
 
 
     //PC & PC + 4
-
-
-    
-
-    assign ctrl_writeReg = q_imem[31:27] == 5b'00000 ? q_imem[21:17]:q_imem[15:11];
-    assign ctrl_readRegA = q_imem[26:22]
-    assign ctrl_readRegB = q_imem[21:17]
-
-
-
-    wire [31:0] pc_in, pc_out, insn_out;
+     wire [31:0] pc_in, pc_out, insn_out;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(clock), .pc_in(pc_in));
     alu(pc_out, 32'd4, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, 1'b0);   
     
