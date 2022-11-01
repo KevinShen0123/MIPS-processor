@@ -100,7 +100,6 @@ module processor(
     //PC & PC + 4
 =======
 
-    pc pc1(pc_out, clock, reset, pc_in);
     
 
     assign ctrl_writeReg = q_imem[31:27] == 5b'00000 ? q_imem[21:17]:q_imem[15:11];
