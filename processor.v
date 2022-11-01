@@ -157,7 +157,13 @@ module processor(
 	data_readRegB);// If we need alu and overflow happens, we call regfile to change r30 register by definition
     assign data_writeReg=alu_flag?data_reg_write:32'h0000;//If we used alu, we set data_writeReg to alu output, otherwise default as 0;
 	 //and we will assign data_writeReg to a new value for I-type later.
-
+          // sw and lw operation
+	 assign lw_yes=q_imem[31:27]==5'b00111?1:0;
+	 assign sw_yes=q_imem[31:27]=5'b01000?1:0;
+	 assign address_dmem=1?data_reg_write[11:0]:data_reg_write[11:0];
+	 assign data=1?aluinput:aluinput;
+	 assign wren=1?sw_yes:sw_yes;
+	 assign data_writeReg=lw_yes?q_dmem:data_reg_write;
     
 
 	
