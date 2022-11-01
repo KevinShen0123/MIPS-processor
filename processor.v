@@ -104,9 +104,29 @@ module processor(
     
 
     //Choose type (R/I)
-	assign ctrl_writeReg = q_imem[31:27] == 5b'00000 ? q_imem[21:17]:q_imem[15:11];
-    assign ctrl_readRegA = q_imem[26:22]
-    assign ctrl_readRegB = q_imem[21:17]
+
+	generate 
+    if (q_imem == 5b'00000) begin : ctrl_writereg_generation 
+    assign ctrl_writeReg = q_imem[21:17];
+    end
+    else begin 
+    assign ctrl_writeReg = q_imem[15:11];
+    end
+    endgenerate
+
+    assign ctrl_readRegA = q_imem[26:22];
+    assign ctrl_readRegB = q_imem[21:17];
+    // regfile need change ctrl_writeenable
+    regfile reg1(clock, ctrl_writeEnable, reset, ctrl_writeReg,
+	ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA,
+	data_readRegB)
+    wire sximmed;
+    sx sx1(sximmed,q_imem[21:17]);
+    wire aluinput;
+    aluinput = q_imem[31:27] == 5b'00000 ?  data_readRegB : sximmed
+
+    //alu
+    
 
     
 
