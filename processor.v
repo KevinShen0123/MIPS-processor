@@ -91,17 +91,9 @@ module processor(
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
-<<<<<<< HEAD
-    pc pc1(pc_out, clock, reset, pc_in);
-=======
-    wire [31:0] pc_out;
-    wire [31:0] pc_next;
-
-    //PC component
-    pc pc_processor (.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
-    
->>>>>>> refs/remotes/origin/main
-    
+    wire [31:0] pc_in, pc_out, insn_out;
+    pc pc1(.pc_out(pc_out), .clock(clock), .reset(clock), .pc_in(pc_in));
+    alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, 1'b0);   
     
 	 
 
