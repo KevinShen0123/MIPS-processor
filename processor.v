@@ -101,7 +101,8 @@ module processor(
      wire [31:0] pc_in, pc_out, insn_out;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(clock), .pc_in(pc_in));
     alu(pc_out, 32'd4, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, 1'b0);   
-    
+     //address_imem Kevin's Change
+	 assign address_imem=1?pc_out[11:0]:pc_out[11:0];
 
     //Choose type (R/I)
 
@@ -136,7 +137,15 @@ module processor(
 
 
     //alu
-    
+    // Kevin's Change
+	 wire isNotEqual, isLessThan, overflow;
+	 alu my_alu(data_readRegA, aluinput, q_imem[6:2], q_imem[11:7],data_writeReg, isNotEqual, isLessThan, overflow);//call alu
+	 wire enableTwo;
+	 assign enableTwo=overflow?1:0;//check if overflow or not to determine change rstatus or not
+	 assign data_writeTwo=q_imem[31:27]==5'b00000?q_imem[6:2]==5'b00000?32'h0001:32'h0003:32'h0002;
+	 regfile(clock, enableTwo, ctrl_reset, 32'h001E,
+	ctrl_readRegA, ctrl_readRegB, data_writeTwo, data_readRegA,
+	data_readRegB);// call regfile to change rstatus
 
     
 
