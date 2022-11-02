@@ -105,17 +105,10 @@ module processor(
 	 assign address_imem=1?pc_out[11:0]:pc_out[11:0];
 
     //Choose type (R/I)
-	  wire F1;
+	 wire F1;
 	 cmp c1(F1,q_imem[31:27],5'b00000);
-//generate 
-//    if (F1==1'b1) begin : ctrl_writereg_generation 
-//    assign ctrl_readRegB = q_imem[16:12];
-//    end
-//    else begin 
-//    assign ctrl_readRegB = q_imem[21:17];
-//    end
-//    endgenerate
-     assign ctrl_readRegB=F1?q_imem[16:12]:q_imem[21:17];
+
+    assign ctrl_readRegB=F1?q_imem[16:12]:q_imem[21:17];
     assign ctrl_writeReg = q_imem[26:22];
     assign ctrl_readRegA = q_imem[21:17];
     // regfile, need change ctrl_writeenable
@@ -126,15 +119,7 @@ module processor(
     //sign extend immediate
     sx sx1(sximmed,q_imem[16:0]);
     wire aluinput;
-    //choose input of alu
-//    generate 
-//    if (F1==1'b1) begin : ctrl_writereg_generation 
-//    assign aluinput = sximmed;
-//    end
-//    else begin 
-//    assign aluinput = data_readRegB;
-//    end
-//    endgenerate
+
      assign aluinput=F1?sximmed:data_readRegB;
     //alu
     // Kevin's Change about R types instructions

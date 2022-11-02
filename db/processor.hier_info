@@ -1,5 +1,5 @@
 |cmp
-equal_flag <= ad4.DB_MAX_OUTPUT_PORT_TYPE
+equal_flag << ad4.DB_MAX_OUTPUT_PORT_TYPE
 numberone[0] => x1.IN0
 numberone[1] => x2.IN0
 numberone[2] => x3.IN0
