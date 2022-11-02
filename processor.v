@@ -134,7 +134,7 @@ module processor(
     assign aluinput = data_readRegB;
     end
     endgenerate
-*/
+
 
     //alu
     // Kevin's Change about R types instructions
@@ -169,7 +169,7 @@ module processor(
 	 assign data=1?aluinput:aluinput;
 	 assign wren=1?sw_yes:sw_yes;
 	 assign data_writeReg=lw_yes?q_dmem:data_reg_write;
-	
+	*/
 
 endmodule
 

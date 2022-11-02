@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/zs149/Documents/github/550-cp4/simulation/qsim
+vcmp
+Z1 !s110 1667405662
+!i10b 1
+!s100 jn>d8C2VzUhNe;;3DzW>o0
+I74zK95N_oVAlK0L;4Fgkn0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1667405661
+Z3 8processor.vo
+Z4 Fprocessor.vo
+Z5 L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1667405662.000000
+Z8 !s107 processor.vo|
+Z9 !s90 -work|work|processor.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vcmp_vlg_vec_tst
+R1
+!i10b 1
+!s100 WK>:A4J[ISeTFK;S_X_gb3
+InTC7MMI2a]ZM2A<>^70L30
+R2
+R0
+w1667405659
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+Z12 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+Z13 !s110 1667407929
+!i10b 1
+!s100 R_37M=bF=gCOAmSN`?Q9Q0
+ImJXldU:E>NJ^:@O?77bVZ2
+R2
+R0
+Z14 w1667407928
+R3
+R4
+L0 809
+R6
+r1
+!s85 0
+31
+Z15 !s108 1667407929.000000
+R8
+R9
+!i113 1
+R10
+R11
+vsx
+R13
+!i10b 1
+!s100 7eEDAOFL<1Ahml7UeI^Je1
+Ib^`hXUBR8Be^XL>UdWok03
+R2
+R0
+R14
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+R15
+R8
+R9
+!i113 1
+R10
+R11
+vsx_vlg_vec_tst
+R13
+!i10b 1
+!s100 C:d`=PYR<^Q1c`AiM3TR]0
+I:ZYP:k:aF`oGkn869Cl?30
+R2
+R0
+w1667407926
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R15
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
