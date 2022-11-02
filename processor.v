@@ -105,8 +105,7 @@ module processor(
 	 assign address_imem=1?pc_out[11:0]:pc_out[11:0];
 
     //Choose type (R/I)
-/*
-	generate 
+generate 
     if (q_imem[31:27] == 5b'00000) begin : ctrl_writereg_generation 
     assign ctrl_readRegB = q_imem[16:12];
     end
@@ -134,8 +133,6 @@ module processor(
     assign aluinput = data_readRegB;
     end
     endgenerate
-
-*/
     //alu
     // Kevin's Change about R types instructions
 	 wire isNotEqual, isLessThan, overflow;//The parameter for alu
