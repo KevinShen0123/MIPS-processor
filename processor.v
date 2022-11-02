@@ -103,36 +103,39 @@ module processor(
     alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan,overflow);   
      //address_imem Kevin's Change
 	 assign address_imem=1?pc_out[11:0]:pc_out[11:0];
-/*
-    //Choose type (R/I)
-generate 
-    if (q_imem[31:27] == 5b'00000) begin : ctrl_writereg_generation 
-    assign ctrl_readRegB = q_imem[16:12];
-    end
-    else begin 
-    assign ctrl_readRegB = q_imem[21:17];
-    end
-    endgenerate
 
+    //Choose type (R/I)
+	  wire F1;
+	 cmp c1(F1,q_imem[31:27],5'b00000);
+//generate 
+//    if (F1==1'b1) begin : ctrl_writereg_generation 
+//    assign ctrl_readRegB = q_imem[16:12];
+//    end
+//    else begin 
+//    assign ctrl_readRegB = q_imem[21:17];
+//    end
+//    endgenerate
+     assign ctrl_readRegB=F1?q_imem[16:12]:q_imem[21:17];
     assign ctrl_writeReg = q_imem[26:22];
     assign ctrl_readRegA = q_imem[21:17];
     // regfile, need change ctrl_writeenable
     regfile reg1(clock, ctrl_writeEnable, reset, ctrl_writeReg,
 	ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA,
-	data_readRegB)
+	data_readRegB);
     wire sximmed;
     //sign extend immediate
     sx sx1(sximmed,q_imem[16:0]);
     wire aluinput;
     //choose input of alu
-    generate 
-    if (q_imem[31:27] == 5b'00000) begin : ctrl_writereg_generation 
-    assign aluinput = sximmed;
-    end
-    else begin 
-    assign aluinput = data_readRegB;
-    end
-    endgenerate
+//    generate 
+//    if (F1==1'b1) begin : ctrl_writereg_generation 
+//    assign aluinput = sximmed;
+//    end
+//    else begin 
+//    assign aluinput = data_readRegB;
+//    end
+//    endgenerate
+     assign aluinput=F1?sximmed:data_readRegB;
     //alu
     // Kevin's Change about R types instructions
 	 wire isNotEqual, isLessThan, overflow;//The parameter for alu
@@ -141,15 +144,12 @@ generate
 	 cmp cmp1(f1,q_imem[31:27],5'b00101);
 	 cmp cmp2(f2,q_imem[31:27],5'b00111);
 	 cmp cmp3(f3,q_imem[31:27],5'b01000);
-	 assign alu_opcode=f1?5'b00000:q_imem[6:2];
-	 assign alu_opcode=f2?5'b00000:q_imem[6:2];
-	 assign alu_opcode=f3?5'b00000:q_imem[6:2];
+	 assign alu_opcode=f1?5'b00000:f2?5'b00000:f3?5'b00000:q_imem[6:2];
 	 wire [31:0] data_reg_write;//set a temporary variable for the output for alu
 	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
 	 wire alu_flag;
 	 wire enableTwo;
-	 assign alu_flag=f2?0:1;
-	 assign alu_flag=f3?0:1;//judge whether we need alu in R type or not, if sw or lw, we do not need alu
+     assign alu_flag=f2?0:f3?0:1;//judge whether we need alu in R type or not, if sw or lw, we do not need alu
 	 and and1(enableTwo,alu_flag, overflow);// 
 	 cmp cmp4(f4,q_imem[31:27],5'b00000);
 	 cmp cmp5(f5,q_imem[6:2],5'b00000);
@@ -157,7 +157,6 @@ generate
 	 regfile(clock, enableTwo, ctrl_reset, 32'h001E,
 	ctrl_readRegA, ctrl_readRegB, data_writeTwo, data_readRegA,
 	data_readRegB);// If we need alu and overflow happens, we call regfile to change r30 register by definition
-    assign data_writeReg=alu_flag?data_reg_write:32'h0000;//If we used alu, we set data_writeReg to alu output, otherwise default as 0;
 	 //and we will assign data_writeReg to a new value for I-type later.
 	 // sw and lw operation
 	 assign lw_yes=f2?1:0;
@@ -165,8 +164,6 @@ generate
 	 assign address_dmem=1?data_reg_write[11:0]:data_reg_write[11:0];
 	 assign data=1?aluinput:aluinput;
 	 assign wren=1?sw_yes:sw_yes;
-	 assign data_writeReg=lw_yes?q_dmem:data_reg_write; */
-	
+	 assign data_writeReg=alu_flag?data_reg_write:lw_yes?q_dmem:data_reg_write;
 
 endmodule
-
