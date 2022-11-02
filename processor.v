@@ -137,35 +137,61 @@ module processor(
 
 
     //alu
-     //alu
     // Kevin's Change about R types instructions
 	 wire isNotEqual, isLessThan, overflow;//The parameter for alu
 	 wire [4:0] alu_opcode;//If it is R type, then we use q_imem[6:2], otherwise, set default to 00000;
-	 assign alu_opcode=q_imem[31:27]==5'b00101?5'b00000,q_imem[6:2];
-	 assign alu_opcode=q_imem[31:27]==5'b00111?5'b00000,q_imem[6:2];
-	 assign alu_opcode=q_imem[31:27]==5'b01000?5'b00000,q_imem[6:2];
+	 wire f1,f2,f3,f4,f5,f6,f7,f8,f9,f10;
+	 cmp cmp1(f1,q_imem[31:27],5'b00101);
+	 cmp cmp2(f2,q_imem[31:27],5'b00111);
+	 cmp cmp3(f3,q_imem[31:27],5'b01000);
+	 assign alu_opcode=f1?5'b00000,q_imem[6:2];
+	 assign alu_opcode=f2?5'b00000,q_imem[6:2];
+	 assign alu_opcode=f3?5'b00000,q_imem[6:2];
 	 wire [31:0] data_reg_write;//set a temporary variable for the output for alu
 	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
 	 wire alu_flag;
 	 wire enableTwo;
-	 assign alu_flag=q_imem[31:27]==5'b00111?0:1;
-	 assign alu_flag=q_imem[31:27]==5'b01000?0:1;//judge whether we need alu in R type or not, if sw or lw, we do not need alu
+	 assign alu_flag=f2?0:1;
+	 assign alu_flag=f3?0:1;//judge whether we need alu in R type or not, if sw or lw, we do not need alu
 	 and and1(enableTwo,alu_flag, overflow);// 
-	 assign data_writeTwo=q_imem[31:27]==5'b00000?q_imem[6:2]==5'b00000?32'h0001:32'h0003:32'h0002;
+	 cmp cmp4(f4,q_imem[31:27],5'b00000);
+	 cmp cmp5(f5,q_imem[6:2],5'b00000);
+	 assign data_writeTwo=f4?f5?32'h0001:32'h0003:32'h0002;
 	 regfile(clock, enableTwo, ctrl_reset, 32'h001E,
 	ctrl_readRegA, ctrl_readRegB, data_writeTwo, data_readRegA,
 	data_readRegB);// If we need alu and overflow happens, we call regfile to change r30 register by definition
     assign data_writeReg=alu_flag?data_reg_write:32'h0000;//If we used alu, we set data_writeReg to alu output, otherwise default as 0;
 	 //and we will assign data_writeReg to a new value for I-type later.
-          // sw and lw operation
-	 assign lw_yes=q_imem[31:27]==5'b00111?1:0;
-	 assign sw_yes=q_imem[31:27]=5'b01000?1:0;
+	 // sw and lw operation
+	 assign lw_yes=f2?1:0;
+	 assign sw_yes=f3?1:0;
 	 assign address_dmem=1?data_reg_write[11:0]:data_reg_write[11:0];
 	 assign data=1?aluinput:aluinput;
 	 assign wren=1?sw_yes:sw_yes;
 	 assign data_writeReg=lw_yes?q_dmem:data_reg_write;
-    
-
 	
 
+endmodule
+module cmp(equal_flag, numberone,numberTwo);
+input [4:0] numberone;
+input [4:0] numberTwo;
+output equal_flag;
+wire f1,f2,f3,f4,f5;
+wire f6,f7,f8,f9,f10;
+xor x1(f1,numberone,numberTwo);
+assign f6=f1?0:1;
+xor x2(f2,numberone,numberTwo);
+assign f7=f2?0:1;
+xor x3(f3,numberone,numberTwo);
+assign f8=f3?0:1;
+xor x4(f4,numberone,numberTwo);
+assign f9=f4?0:1;
+xor x5(f5,numberone,numberTwo);
+assign f10=f5?0:1;
+wire a1,a2,a3,a4,a5;
+and ad1(a1,f6,f7);
+and ad2(a2,f8,f9);
+and ad3(a3,a1,a2);
+and ad4(a4,a3,f10);
+assign equal_flag=a4?1:0;
 endmodule
