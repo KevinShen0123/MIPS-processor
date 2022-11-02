@@ -1,22 +1,14 @@
 |cmp
-equal_flag << ad4.DB_MAX_OUTPUT_PORT_TYPE
+equal_flag <= ad4.DB_MAX_OUTPUT_PORT_TYPE
 numberone[0] => x1.IN0
-numberone[0] => x2.IN0
-numberone[0] => x3.IN0
-numberone[0] => x4.IN0
-numberone[0] => x5.IN0
-numberone[1] => ~NO_FANOUT~
-numberone[2] => ~NO_FANOUT~
-numberone[3] => ~NO_FANOUT~
-numberone[4] => ~NO_FANOUT~
+numberone[1] => x2.IN0
+numberone[2] => x3.IN0
+numberone[3] => x4.IN0
+numberone[4] => x5.IN0
 numberTwo[0] => x1.IN1
-numberTwo[0] => x2.IN1
-numberTwo[0] => x3.IN1
-numberTwo[0] => x4.IN1
-numberTwo[0] => x5.IN1
-numberTwo[1] => ~NO_FANOUT~
-numberTwo[2] => ~NO_FANOUT~
-numberTwo[3] => ~NO_FANOUT~
-numberTwo[4] => ~NO_FANOUT~
+numberTwo[1] => x2.IN1
+numberTwo[2] => x3.IN1
+numberTwo[3] => x4.IN1
+numberTwo[4] => x5.IN1
 
 

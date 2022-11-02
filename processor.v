@@ -103,7 +103,7 @@ module processor(
     alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan,overflow);   
      //address_imem Kevin's Change
 	 assign address_imem=1?pc_out[11:0]:pc_out[11:0];
-
+/*
     //Choose type (R/I)
 generate 
     if (q_imem[31:27] == 5b'00000) begin : ctrl_writereg_generation 
@@ -165,7 +165,7 @@ generate
 	 assign address_dmem=1?data_reg_write[11:0]:data_reg_write[11:0];
 	 assign data=1?aluinput:aluinput;
 	 assign wren=1?sw_yes:sw_yes;
-	 assign data_writeReg=lw_yes?q_dmem:data_reg_write;
+	 assign data_writeReg=lw_yes?q_dmem:data_reg_write; */
 	
 
 endmodule

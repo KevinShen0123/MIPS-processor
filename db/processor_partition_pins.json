@@ -14,6 +14,38 @@
 				{
 					"name" : "numberTwo[0]",
 					"strict" : false
+				},
+				{
+					"name" : "numberone[1]",
+					"strict" : false
+				},
+				{
+					"name" : "numberTwo[1]",
+					"strict" : false
+				},
+				{
+					"name" : "numberone[2]",
+					"strict" : false
+				},
+				{
+					"name" : "numberTwo[2]",
+					"strict" : false
+				},
+				{
+					"name" : "numberone[3]",
+					"strict" : false
+				},
+				{
+					"name" : "numberTwo[3]",
+					"strict" : false
+				},
+				{
+					"name" : "numberone[4]",
+					"strict" : false
+				},
+				{
+					"name" : "numberTwo[4]",
+					"strict" : false
 				}
 			]
 		}
