@@ -9,26 +9,26 @@ z2
 cModel Technology
 Z0 dC:/Users/zs149/Documents/github/550-cp4/simulation/qsim
 vcmp
-Z1 !s110 1667405662
+Z1 !s110 1667408203
 !i10b 1
 !s100 jn>d8C2VzUhNe;;3DzW>o0
 I74zK95N_oVAlK0L;4Fgkn0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1667405661
-Z3 8processor.vo
-Z4 Fprocessor.vo
-Z5 L0 32
-Z6 OV;L;10.5b;63
+Z3 w1667408202
+Z4 8processor.vo
+Z5 Fprocessor.vo
+Z6 L0 32
+Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1667405662.000000
-Z8 !s107 processor.vo|
-Z9 !s90 -work|work|processor.vo|
+Z8 !s108 1667408203.000000
+Z9 !s107 processor.vo|
+Z10 !s90 -work|work|processor.vo|
 !i113 1
-Z10 o-work work
-Z11 tCvgOpt 0
+Z11 o-work work
+Z12 tCvgOpt 0
 vcmp_vlg_vec_tst
 R1
 !i10b 1
@@ -36,80 +36,80 @@ R1
 InTC7MMI2a]ZM2A<>^70L30
 R2
 R0
-w1667405659
-8Waveform.vwf.vt
-FWaveform.vwf.vt
-Z12 L0 30
-R6
+w1667408200
+Z13 8Waveform.vwf.vt
+Z14 FWaveform.vwf.vt
+Z15 L0 30
+R7
 r1
 !s85 0
 31
-R7
+R8
 !s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
+Z16 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R10
 R11
+R12
 vhard_block
-Z13 !s110 1667407929
+R1
 !i10b 1
-!s100 R_37M=bF=gCOAmSN`?Q9Q0
-ImJXldU:E>NJ^:@O?77bVZ2
+!s100 L`O:RHRIBPSB4YMhK74bk3
+IGQ9H0V`f7S0b<MKjDa>hc0
 R2
 R0
-Z14 w1667407928
 R3
 R4
-L0 809
-R6
+R5
+L0 218
+R7
 r1
 !s85 0
 31
-Z15 !s108 1667407929.000000
 R8
 R9
-!i113 1
 R10
+!i113 1
 R11
+R12
 vsx
-R13
+Z17 !s110 1667408102
 !i10b 1
 !s100 7eEDAOFL<1Ahml7UeI^Je1
 Ib^`hXUBR8Be^XL>UdWok03
 R2
 R0
-R14
-R3
+w1667408101
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
-R15
-R8
+Z18 !s108 1667408102.000000
 R9
-!i113 1
 R10
+!i113 1
 R11
+R12
 vsx_vlg_vec_tst
-R13
+R17
 !i10b 1
-!s100 C:d`=PYR<^Q1c`AiM3TR]0
-I:ZYP:k:aF`oGkn869Cl?30
+!s100 jfE<bN;j?iWZNU3`hYlaz1
+I`<@MA]ENim39?`LL^NAO40
 R2
 R0
-w1667407926
-8Waveform1.vwf.vt
-FWaveform1.vwf.vt
-R12
-R6
+w1667408099
+R13
+R14
+R15
+R7
 r1
 !s85 0
 31
-R15
-!s107 Waveform1.vwf.vt|
-!s90 -work|work|Waveform1.vwf.vt|
+R18
+!s107 Waveform.vwf.vt|
+R16
 !i113 1
-R10
 R11
+R12

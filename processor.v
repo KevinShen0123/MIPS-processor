@@ -98,15 +98,15 @@ module processor(
 
 
     //PC & PC + 4
-     wire [31:0] pc_in, pc_out, insn_out;
+     wire [31:0] pc_in, pc_out, insn_out,overflow;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(clock), .pc_in(pc_in));
-    alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, 1'b0);   
+    alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan,overflow);   
      //address_imem Kevin's Change
 	 assign address_imem=1?pc_out[11:0]:pc_out[11:0];
 
     //Choose type (R/I)
-
-	/*generate 
+/*
+	generate 
     if (q_imem[31:27] == 5b'00000) begin : ctrl_writereg_generation 
     assign ctrl_readRegB = q_imem[16:12];
     end
@@ -135,7 +135,7 @@ module processor(
     end
     endgenerate
 
-
+*/
     //alu
     // Kevin's Change about R types instructions
 	 wire isNotEqual, isLessThan, overflow;//The parameter for alu
@@ -144,9 +144,9 @@ module processor(
 	 cmp cmp1(f1,q_imem[31:27],5'b00101);
 	 cmp cmp2(f2,q_imem[31:27],5'b00111);
 	 cmp cmp3(f3,q_imem[31:27],5'b01000);
-	 assign alu_opcode=f1?5'b00000,q_imem[6:2];
-	 assign alu_opcode=f2?5'b00000,q_imem[6:2];
-	 assign alu_opcode=f3?5'b00000,q_imem[6:2];
+	 assign alu_opcode=f1?5'b00000:q_imem[6:2];
+	 assign alu_opcode=f2?5'b00000:q_imem[6:2];
+	 assign alu_opcode=f3?5'b00000:q_imem[6:2];
 	 wire [31:0] data_reg_write;//set a temporary variable for the output for alu
 	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
 	 wire alu_flag;
@@ -169,7 +169,7 @@ module processor(
 	 assign data=1?aluinput:aluinput;
 	 assign wren=1?sw_yes:sw_yes;
 	 assign data_writeReg=lw_yes?q_dmem:data_reg_write;
-	*/
+	
 
 endmodule
 
