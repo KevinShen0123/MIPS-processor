@@ -100,7 +100,7 @@ module processor(
     //PC & PC + 4
      wire [31:0] pc_in, pc_out, insn_out;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(clock), .pc_in(pc_in));
-    alu(pc_out, 32'd4, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, 1'b0);   
+    alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, 1'b0);   
      //address_imem Kevin's Change
 	 assign address_imem=1?pc_out[11:0]:pc_out[11:0];
 
