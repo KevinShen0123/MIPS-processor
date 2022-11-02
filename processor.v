@@ -106,7 +106,7 @@ module processor(
 
     //Choose type (R/I)
 
-	generate 
+	/*generate 
     if (q_imem[31:27] == 5b'00000) begin : ctrl_writereg_generation 
     assign ctrl_readRegB = q_imem[16:12];
     end
@@ -134,7 +134,7 @@ module processor(
     assign aluinput = data_readRegB;
     end
     endgenerate
-
+*/
 
     //alu
     // Kevin's Change about R types instructions
@@ -172,26 +172,4 @@ module processor(
 	
 
 endmodule
-module cmp(equal_flag, numberone,numberTwo);
-input [4:0] numberone;
-input [4:0] numberTwo;
-output equal_flag;
-wire f1,f2,f3,f4,f5;
-wire f6,f7,f8,f9,f10;
-xor x1(f1,numberone,numberTwo);
-assign f6=f1?0:1;
-xor x2(f2,numberone,numberTwo);
-assign f7=f2?0:1;
-xor x3(f3,numberone,numberTwo);
-assign f8=f3?0:1;
-xor x4(f4,numberone,numberTwo);
-assign f9=f4?0:1;
-xor x5(f5,numberone,numberTwo);
-assign f10=f5?0:1;
-wire a1,a2,a3,a4,a5;
-and ad1(a1,f6,f7);
-and ad2(a2,f8,f9);
-and ad3(a3,a1,a2);
-and ad4(a4,a3,f10);
-assign equal_flag=a4?1:0;
-endmodule
+
