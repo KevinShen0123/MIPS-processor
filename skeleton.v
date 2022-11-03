@@ -21,7 +21,7 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
     output imem_clock, dmem_clock, processor_clock, regfile_clock;
    
 
-    clock_div4 pc_clk(.clock_out(processor_clock), .clock(clock), .reset(reset));
+    clk_div4 pc_clk(.clk_out(processor_clock), .clk(clock), .reset(reset));
     assign dmem_clock = clock;
     assign imem_clock = dmem_clock;
     assign regfile_clock = processor_clock;

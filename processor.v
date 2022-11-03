@@ -100,7 +100,7 @@ module processor(
     //PC & PC + 4
      wire [31:0] pc_in, pc_out, insn_out;
 	  wire dummy;
-    pc pc1(.pc_out(pc_out), .clock(clock), .reset(clock), .pc_in(pc_in));
+    pc pc1(.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
     alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan,dummy);   
      //address_imem Kevin's Change
 	 assign address_imem=1?pc_out[11:0]:pc_out[11:0];
@@ -119,15 +119,12 @@ module processor(
     assign ctrl_readRegA = q_imem[21:17];
    
 	
-    regfile reg1(clock, ctrl_writeEnable, reset, ctrl_writeReg,
-	ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA,
-	data_readRegB);
-    wire sximmed;
+
     //sign extend immediate
     sx sx1(sximmed,q_imem[16:0]);
     wire aluinput;
 
-     assign aluinput=F1?sximmed:data_readRegB;
+     assign aluinput=F1?data_readRegB:sximmed;
     //alu
     // Kevin's Change about R types instructions
 	 wire isNotEqual, isLessThan, overflow;//The parameter for alu
