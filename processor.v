@@ -69,8 +69,10 @@ module processor(
     ctrl_readRegB,                  // O: Register to read from port B of regfile
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
-    data_readRegB                   // I: Data from port B of regfile
+    data_readRegB,
+data_reg_write, aluinput, alu_opcode	 // I: Data from port B of regfile
 );
+output [31:0]data_reg_write;
     // Control signals
     input clock, reset;
 
@@ -122,19 +124,19 @@ module processor(
 
     //sign extend immediate
     sx sx1(sximmed,q_imem[16:0]);
-    wire aluinput;
+    output[31:0] aluinput;
 
      assign aluinput=F1?data_readRegB:sximmed;
     //alu
     // Kevin's Change about R types instructions
 	 wire isNotEqual, isLessThan, overflow;//The parameter for alu
-	 wire [4:0] alu_opcode;//If it is R type, then we use q_imem[6:2], otherwise, set default to 00000;
+	 output [4:0] alu_opcode;//If it is R type, then we use q_imem[6:2], otherwise, set default to 00000;
 	 wire f1,f2,f3,f4,f5,f6,f7,f8,f9,f10;
 	 cmp cmp1(f1,q_imem[31:27],5'b00101);
 	 cmp cmp2(f2,q_imem[31:27],5'b00111);
 	 cmp cmp3(f3,q_imem[31:27],5'b01000);
 	 assign alu_opcode=f1?5'b00000:f2?5'b00000:f3?5'b00000:q_imem[6:2];
-	 wire [31:0] data_reg_write;//set a temporary variable for the output for alu
+	 //wire [31:0] data_reg_write;//set a temporary variable for the output for alu
 	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
 	 wire alu_flag;
 	 wire enableTwo;
@@ -144,7 +146,7 @@ module processor(
 	 cmp cmp5(f5,q_imem[6:2],5'b00000);
 	 assign data_writeTwo=f4?f5?32'h0001:32'h0003:32'h0002;
 	  wire[31:0] s1,s2;
-	 regfile(clock, enableTwo, ctrl_reset, 32'h001E,
+	 regfile reg1(clock, enableTwo, ctrl_reset, 32'h001E,
 	ctrl_readRegA, ctrl_readRegB, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
 	 //and we will assign data_writeReg to a new value for I-type later.
 	 // sw and lw operation
