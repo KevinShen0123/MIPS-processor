@@ -824,6 +824,154 @@
 					"strict" : false
 				},
 				{
+					"name" : "aluinput[0]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[1]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[2]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[3]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[4]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[5]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[6]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[7]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[8]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[9]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[10]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[11]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[12]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[13]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[14]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[15]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[16]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[17]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[18]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[19]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[20]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[21]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[22]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[23]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[24]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[25]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[26]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[27]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[28]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[29]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[30]",
+					"strict" : false
+				},
+				{
+					"name" : "aluinput[31]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_opcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_opcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_opcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_opcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_opcode[4]",
+					"strict" : false
+				},
+				{
 					"name" : "clock",
 					"strict" : false
 				},

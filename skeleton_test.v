@@ -14,6 +14,8 @@ address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,ctrl_writeReg
 data_writeReg,data_readRegA, data_readRegB,data_result,aluinput, alu_opcode
 
 );
+	output[31:0]aluinput;
+output[4:0]	alu_opcode;
     input clock, reset;
 	 output [31:0]data_result;
     /* 
