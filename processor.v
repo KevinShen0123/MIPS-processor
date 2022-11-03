@@ -141,7 +141,7 @@ module processor(
 	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
 	 wire alu_flag;
 	 wire enableTwo;
-     assign alu_flag=f2?0:f3?0:1;//judge whether we need alu in R type or not, if sw or lw, we do not need alu
+     assign alu_flag=f2?0:f3?0:1;//decide whether we need alu in R type or not, if sw or lw, we do not need alu
 	 and and1(enableTwo,alu_flag, overflow);// 
 	 cmp cmp4(f4,q_imem[31:27],5'b00000);
 	 cmp cmp5(f5,q_imem[6:2],5'b00000);
