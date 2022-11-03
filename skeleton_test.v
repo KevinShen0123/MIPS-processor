@@ -11,11 +11,9 @@
 
 module skeleton_test(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
 address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,ctrl_writeReg,ctrl_readRegA, ctrl_readRegB,
-data_writeReg,data_readRegA, data_readRegB,data_result,aluinput, alu_opcode
-
-);
+data_writeReg,data_readRegA, data_readRegB,data_result,aluinput, alu_opcode);
 	output[31:0]aluinput;
-output[4:0]	alu_opcode;
+    output[4:0]	alu_opcode;
     input clock, reset;
 	 output [31:0]data_result;
     /* 

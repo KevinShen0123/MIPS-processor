@@ -1,6 +1,6 @@
 // ---------- SAMPLE TEST BENCH ----------
 `timescale 1 ns / 100 ps
-module processortb();
+module processor_tb();
     wire [4:0]ctrl_writeReg,ctrl_readRegA, ctrl_readRegB;
     wire ctrl_writeEnable,wren;
     wire [11:0] address_imem,address_dmem;
@@ -37,7 +37,7 @@ module processortb();
     begin
         $display($time, " << Starting the Simulation >>");
         clock = 1'b0;    // at time 0
-        
+        errors = 0;
 
         ctrl_reset = 1'b1;    // assert reset
         @(negedge clock);    // wait until next negative edge of clock
