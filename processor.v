@@ -107,14 +107,18 @@ module processor(
 
     //Choose type (R/I)
 
-	 wire F1;
+	 wire F1,F2,F3;
 	 cmp c1(F1,q_imem[31:27],5'b00000);
-
+	 cmp c2(F2,q_imem[31:27],5'b00101);
+	 cmp c3(F3,q_imem[31:27],5'b01000);
+	  // ctrl_writeEnable = 1 when r type, addi,lw
+	 or or1(ctrl_writeEnable,F1,F2,F3);
+	
     assign ctrl_readRegB=F1?q_imem[16:12]:q_imem[21:17];
     assign ctrl_writeReg = q_imem[26:22];
     assign ctrl_readRegA = q_imem[21:17];
-    // ctrl_writeEnable = 1 when 
-
+   
+	
     regfile reg1(clock, ctrl_writeEnable, reset, ctrl_writeReg,
 	ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA,
 	data_readRegB);
