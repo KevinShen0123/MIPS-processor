@@ -32,6 +32,7 @@ source_file = 1, C:/Users/zs149/Documents/github/550-cp4/Waveform4.vwf
 source_file = 1, C:/Users/zs149/Documents/github/550-cp4/clock_div2.v
 source_file = 1, C:/Users/zs149/Documents/github/550-cp4/dmem_bb.qip
 source_file = 1, C:/Users/zs149/Documents/github/550-cp4/imem_bb.qip
+source_file = 1, C:/Users/zs149/Documents/github/550-cp4/Waveform5.vwf
 source_file = 1, c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf
 source_file = 1, c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc
 source_file = 1, c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc

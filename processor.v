@@ -101,9 +101,9 @@ module processor(
      wire [31:0] pc_in, pc_out, insn_out;
 	  wire dummy;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
-    alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan,dummy);   
+    alu alu1(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan,dummy);   
      //address_imem Kevin's Change
-	 assign address_imem=1?pc_out[11:0]:pc_out[11:0];
+	 assign address_imem=pc_out[11:0];
 
     //Choose type (R/I)
 
@@ -143,9 +143,9 @@ module processor(
 	 cmp cmp4(f4,q_imem[31:27],5'b00000);
 	 cmp cmp5(f5,q_imem[6:2],5'b00000);
 	 assign data_writeTwo=f4?f5?32'h0001:32'h0003:32'h0002;
+	  wire[31:0] s1,s2;
 	 regfile(clock, enableTwo, ctrl_reset, 32'h001E,
-	ctrl_readRegA, ctrl_readRegB, data_writeTwo, data_readRegA,
-	data_readRegB);// If we need alu and overflow happens, we call regfile to change r30 register by definition
+	ctrl_readRegA, ctrl_readRegB, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
 	 //and we will assign data_writeReg to a new value for I-type later.
 	 // sw and lw operation
 	 assign lw_yes=f2?1:0;
