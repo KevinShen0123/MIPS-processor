@@ -111,7 +111,8 @@ module processor(
     assign ctrl_readRegB=F1?q_imem[16:12]:q_imem[21:17];
     assign ctrl_writeReg = q_imem[26:22];
     assign ctrl_readRegA = q_imem[21:17];
-    // regfile, need change ctrl_writeenable
+    // ctrl_writeEnable = 1 when 
+
     regfile reg1(clock, ctrl_writeEnable, reset, ctrl_writeReg,
 	ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA,
 	data_readRegB);
