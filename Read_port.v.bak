@@ -1,0 +1,5 @@
+module Read_port(out,q,ctrl_readReg);
+	output [15:0] out;
+	input [31:0] q;
+	input [4:0] ctrl_readReg;
+endmodule
