@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off processor -c processor --vector_source="C:/Users/zs149/Documents/github/550-cp4/Waveform.vwf" --testbench_file="C:/Users/zs149/Documents/github/550-cp4/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off processor -c processor --vector_source="C:/Users/zs149/Documents/github/550-cp4/Waveform4.vwf" --testbench_file="C:/Users/zs149/Documents/github/550-cp4/simulation/qsim/Waveform4.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,8 +26,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Wed Nov 02 13:29:53 2022
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off processor -c processor --vector_source=C:/Users/zs149/Documents/github/550-cp4/Waveform.vwf --testbench_file=C:/Users/zs149/Documents/github/550-cp4/simulation/qsim/Waveform.vwf.vt
+    Info: Processing started: Thu Nov 03 10:46:03 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off processor -c processor --vector_source=C:/Users/zs149/Documents/github/550-cp4/Waveform4.vwf --testbench_file=C:/Users/zs149/Documents/github/550-cp4/simulation/qsim/Waveform4.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -55,13 +55,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Wed Nov 02 13:29:54 2022
+    Info: Processing started: Thu Nov 03 10:46:04 2022
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/zs149/Documents/github/550-cp4/simulation/qsim/ processor -c processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file processor.vo in folder "C:/Users/zs149/Documents/github/550-cp4/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4630 megabytes
-    Info: Processing ended: Wed Nov 02 13:29:55 2022
+    Info: Processing ended: Thu Nov 03 10:46:05 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -79,58 +79,58 @@ C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vsim -c -do processor.do
 
 Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
 
+
 # 10.5b
 
 # do processor.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:29:56 on Nov 02,2022
+# Start time: 10:46:06 on Nov 03,2022
 # vlog -work work processor.vo 
-
-# -- Compiling module cmp
+# -- Compiling module control_signal
 # -- Compiling module hard_block
 # 
 # Top level modules:
-# 	cmp
-# End time: 13:29:56 on Nov 02,2022, Elapsed time: 0:00:00
+# 	control_signal
+# End time: 10:46:06 on Nov 03,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:29:56 on Nov 02,2022
-# vlog -work work Waveform.vwf.vt 
 
-# -- Compiling module cmp_vlg_vec_tst
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:46:06 on Nov 03,2022
+# vlog -work work Waveform4.vwf.vt 
+# -- Compiling module control_signal_vlg_vec_tst
 # 
 # Top level modules:
-# 	cmp_vlg_vec_tst
-# End time: 13:29:56 on Nov 02,2022, Elapsed time: 0:00:00
+# 	control_signal_vlg_vec_tst
+# End time: 10:46:06 on Nov 03,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.cmp_vlg_vec_tst 
-# Start time: 13:29:56 on Nov 02,2022
-# Loading work.cmp_vlg_vec_tst
-# Loading work.cmp
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.control_signal_vlg_vec_tst 
+# Start time: 10:46:06 on Nov 03,2022
+# Loading work.control_signal_vlg_vec_tst
+# Loading work.control_signal
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # after#26
-# ** Note: $finish    : Waveform.vwf.vt(47)
-#    Time: 1 us  Iteration: 0  Instance: /cmp_vlg_vec_tst
-# End time: 13:29:57 on Nov 02,2022, Elapsed time: 0:00:01
+# ** Note: $finish    : Waveform4.vwf.vt(53)
+#    Time: 1 us  Iteration: 0  Instance: /control_signal_vlg_vec_tst
+# End time: 10:46:06 on Nov 03,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/zs149/Documents/github/550-cp4/Waveform.vwf...
+Reading C:/Users/zs149/Documents/github/550-cp4/Waveform4.vwf...
 
 Reading C:/Users/zs149/Documents/github/550-cp4/simulation/qsim/processor.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/zs149/Documents/github/550-cp4/simulation/qsim/processor_20221102132957.sim.vwf
+Writing the resulting VWF to C:/Users/zs149/Documents/github/550-cp4/simulation/qsim/processor_20221103104607.sim.vwf
 
 Finished VCD to VWF conversion.
 

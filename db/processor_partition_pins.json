@@ -4,47 +4,43 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "equal_flag",
+					"name" : "ALUinB",
 					"strict" : false
 				},
 				{
-					"name" : "numberone[0]",
+					"name" : "DMwe",
 					"strict" : false
 				},
 				{
-					"name" : "numberTwo[0]",
+					"name" : "Rwe",
 					"strict" : false
 				},
 				{
-					"name" : "numberone[1]",
+					"name" : "Rdst",
 					"strict" : false
 				},
 				{
-					"name" : "numberTwo[1]",
+					"name" : "Rwd",
 					"strict" : false
 				},
 				{
-					"name" : "numberone[2]",
+					"name" : "opcode[0]",
 					"strict" : false
 				},
 				{
-					"name" : "numberTwo[2]",
+					"name" : "opcode[2]",
 					"strict" : false
 				},
 				{
-					"name" : "numberone[3]",
+					"name" : "opcode[3]",
 					"strict" : false
 				},
 				{
-					"name" : "numberTwo[3]",
+					"name" : "opcode[4]",
 					"strict" : false
 				},
 				{
-					"name" : "numberone[4]",
-					"strict" : false
-				},
-				{
-					"name" : "numberTwo[4]",
+					"name" : "opcode[1]",
 					"strict" : false
 				}
 			]
