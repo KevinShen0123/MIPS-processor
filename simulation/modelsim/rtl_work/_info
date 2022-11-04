@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/zs149/Documents/github/550-cp4/simulation/modelsim
 valu
-Z1 !s110 1667522266
+Z1 !s110 1667524886
 !i10b 1
 !s100 CM2POFHhm`MRQRPIcjMQG0
 I6<eU7Z8MI>CSA4eB>]?Lb3
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1667522266.000000
+Z4 !s108 1667524886.000000
 !s107 C:/Users/zs149/Documents/github/550-cp4/alu.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/alu.v|
 !i113 1
@@ -31,7 +31,7 @@ Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4
 Z7 tCvgOpt 0
 vclk_div4
-!s110 1667522265
+!s110 1667524885
 !i10b 1
 !s100 `JS@c?gRSPo2WM>OZdKSh3
 I]CbX3EM3e9h5]6mWBj15B3
@@ -45,7 +45,7 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1667522265.000000
+Z8 !s108 1667524885.000000
 !s107 C:/Users/zs149/Documents/github/550-cp4/clock_div4.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/clock_div4.v|
 !i113 1
@@ -53,7 +53,7 @@ R5
 R6
 R7
 vcmp
-Z9 !s110 1667522267
+Z9 !s110 1667524887
 !i10b 1
 !s100 E[o@O`;YHmH:6kk_6H3V]1
 IDX]o0_TncnLAJ7JFJnEV40
@@ -67,7 +67,7 @@ R3
 r1
 !s85 0
 31
-Z10 !s108 1667522267.000000
+Z10 !s108 1667524887.000000
 !s107 C:/Users/zs149/Documents/github/550-cp4/cmp.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/cmp.v|
 !i113 1
@@ -209,11 +209,11 @@ R7
 vprocessor
 R1
 !i10b 1
-!s100 8]OaWb?X^IaccOBMTzWdK0
-IRk0j3IaAZOKKK?IlgoCmF1
+!s100 =5oE7mnET=ALdLGhKP^fH3
+I?zVN^GglL]5gT9S__VgWg0
 R2
 R0
-w1667520188
+w1667524872
 8C:/Users/zs149/Documents/github/550-cp4/processor.v
 FC:/Users/zs149/Documents/github/550-cp4/processor.v
 L0 50
@@ -253,11 +253,11 @@ R7
 vskeleton_test
 R9
 !i10b 1
-!s100 SbANcic:LHI<3H;4lAmfL0
-IUeR]]G2ciGi15J[CHdVSf1
+!s100 SnJzETHn6K78PF<bQASaV1
+IcEKXREi2@WhMm^n9WAWn]1
 R2
 R0
-w1667519584
+w1667524875
 8C:/Users/zs149/Documents/github/550-cp4/skeleton_test.v
 FC:/Users/zs149/Documents/github/550-cp4/skeleton_test.v
 L0 12
@@ -275,11 +275,11 @@ R7
 vskeleton_test_tb
 R9
 !i10b 1
-!s100 6CO9EGnnmjZ0H3<E?@NF?2
-I@fJ>WPT7UfR[Q_fz;ZSoS0
+!s100 GF<a_n?mhU`h9WlmnQj<_1
+I5VFTBB_F;SYjPXi=A9cV00
 R2
 R0
-w1667522257
+w1667524869
 8C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v
 FC:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v
 L0 3

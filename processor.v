@@ -70,7 +70,7 @@ module processor(
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
     data_readRegB,
-data_reg_write, aluinput, alu_opcode	 // I: Data from port B of regfile
+data_reg_write, aluinput, alu_opcode,sximmed,	 // I: Data from port B of regfile
 );
 output [31:0]data_reg_write;
     // Control signals
@@ -121,7 +121,7 @@ output [31:0]data_reg_write;
     assign ctrl_readRegA = q_imem[21:17];
    
 	
-
+	 output[31:0] sximmed;
     //sign extend immediate
     sx sx1(sximmed,q_imem[16:0]);
     output[31:0] aluinput;

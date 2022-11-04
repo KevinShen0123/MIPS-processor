@@ -4,7 +4,7 @@ module skeleton_test_tb();
     wire[31:0]aluinput;
     wire[4:0]	alu_opcode;
     reg clock, reset;
-	wire [31:0]data_result;
+	 wire [31:0]data_reg_write;
     wire imem_clock, dmem_clock, processor_clock, regfile_clock;
     wire [11:0] address_imem;
     wire [31:0] q_imem;
@@ -17,12 +17,11 @@ module skeleton_test_tb();
     wire [31:0] data_writeReg;
     wire [31:0] data_readRegA, data_readRegB;
 	 integer i;
+	 wire [31:0]sximmed;
 
     skeleton_test myskeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
-    address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,ctrl_writeReg,ctrl_readRegA, ctrl_readRegB,
-    data_writeReg,data_readRegA, data_readRegB,data_result,aluinput, alu_opcode
-
-    );
+address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,ctrl_writeReg,ctrl_readRegA, ctrl_readRegB,
+data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,sximmed);
     // setting the initial values of all the reg
     initial
     begin
