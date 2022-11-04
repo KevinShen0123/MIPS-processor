@@ -16,6 +16,7 @@ module skeleton_test_tb();
     wire [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
     wire [31:0] data_writeReg;
     wire [31:0] data_readRegA, data_readRegB;
+	 integer i;
 
     skeleton_test myskeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
     address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,ctrl_writeReg,ctrl_readRegA, ctrl_readRegB,
@@ -33,93 +34,21 @@ module skeleton_test_tb();
         @(negedge clock);    // wait until next negative edge of clock
       // wait until next negative edge of clock
 
-        reset = 1'b0;    // de-assert reset
+        reset = 1'b0;
+		  
+		  for (i = 0; i < 200; i = i + 1) begin
+		  @(negedge clock); 
+		  end
+		  $stop;
+		  
+		  
        
 
  
     end
 	 always 
-	begin
-    clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
 
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	 
-	  clock = 1'b1; 
-    #20; // high for 20 * timescale = 20 ns
-
-    clock = 1'b0;
-    #20; // low for 20 * timescale = 20 ns
-	 
-
-	 
-	end
+       	#10 clock = ~clock;
 
 
 
