@@ -90,7 +90,7 @@ module processor(
     input [31:0] q_dmem;
 
     // Regfile
-    wire ctrl_writeEnable;
+    output ctrl_writeEnable;
 
     output [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
 
