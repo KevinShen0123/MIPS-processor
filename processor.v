@@ -115,11 +115,16 @@ output [31:0]data_reg_write;
 	 cmp c3(F3,q_imem[31:27],5'b01000);
 	  // ctrl_writeEnable = 1 when r type, addi,lw
 	 or or1(ctrl_writeEnable,F1,F2,F3);
-	
-    assign ctrl_readRegB=F1?q_imem[16:12]:q_imem[21:17];
+	  wire f1,f2,f3,f4,f5,f6,f7,f8,f9,f10;
+	 cmp cmp1(f1,q_imem[31:27],5'b00101);
+	  cmp cmp2(f2,q_imem[31:27],5'b00111);
+	 cmp cmp3(f3,q_imem[31:27],5'b01000);
+	 assign lw_yes=f3?1:0;
+	 assign sw_yes=f2?1:0;
+    assign ctrl_readRegB=F1?q_imem[16:12]:sw_yes?q_imem[26:22]:q_imem[21:17];
     assign ctrl_writeReg = q_imem[26:22];
     assign ctrl_readRegA = q_imem[21:17];
-   
+    
 	
 	 output[31:0] sximmed;
     //sign extend immediate
@@ -131,10 +136,6 @@ output [31:0]data_reg_write;
     // Kevin's Change about R types instructions
 	 wire isNotEqual, isLessThan, overflow;//The parameter for alu
 	 output [4:0] alu_opcode;//If it is R type, then we use q_imem[6:2], otherwise, set default to 00000;
-	 wire f1,f2,f3,f4,f5,f6,f7,f8,f9,f10;
-	 cmp cmp1(f1,q_imem[31:27],5'b00101);
-	 cmp cmp2(f2,q_imem[31:27],5'b00111);
-	 cmp cmp3(f3,q_imem[31:27],5'b01000);
 	 assign alu_opcode=f1?5'b00000:f2?5'b00000:f3?5'b00000:q_imem[6:2];
 	 //wire [31:0] data_reg_write;//set a temporary variable for the output for alu
 	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
@@ -148,12 +149,12 @@ output [31:0]data_reg_write;
 	  wire[31:0] s1,s2;
 	 //and we will assign data_writeReg to a new value for I-type later.
 	 // sw and lw operation
-	 assign lw_yes=f3?1:0;
-	 assign sw_yes=f2?1:0;
 	 assign address_dmem=data_reg_write[11:0];
-	 assign data=data_readRegB;
+	 //assign data=data_readRegB;
 	 assign wren=sw_yes;
 	 assign data_writeReg=alu_flag?data_reg_write:lw_yes?q_dmem:data_reg_write;
-          regfile reg1(clock, enableTwo, ctrl_reset, 32'h001E,
-	ctrl_readRegA, ctrl_readRegB, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
+         regfile reg1(clock, enableTwo, ctrl_reset, 32'h001E,
+	   q_imem[26:22], 32'h0000, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
+	
+	assign data=data_readRegB;
 endmodule
