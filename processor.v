@@ -70,11 +70,12 @@ module processor(
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
     data_readRegB,
-data_reg_write, aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo	 // I: Data from port B of regfile
+
 );
-output enableTwo;
-output [31:0] data_writeTwo;
-output [31:0]data_reg_write;
+
+
+    
+    wire [31:0] data_writeTwo;
     // Control signals
     input clock, reset;
 
@@ -89,7 +90,7 @@ output [31:0]data_reg_write;
     input [31:0] q_dmem;
 
     // Regfile
-    output ctrl_writeEnable;
+    wire ctrl_writeEnable;
 
     output [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
 
@@ -128,18 +129,18 @@ output [31:0]data_reg_write;
     assign ctrl_readRegA = q_imem[21:17];
     
 	
-	 output[31:0] sximmed;
+	 wire[31:0] sximmed;
     //sign extend immediate
     sx sx1(sximmed,q_imem[16:0]);
-    output[31:0] aluinput;
+    wire[31:0] aluinput;
 
      assign aluinput=F1?data_readRegB:sximmed;
     //alu
     // Kevin's Change about R types instructions
 	 wire isNotEqual, isLessThan, overflow;//The parameter for alu
-	 output [4:0] alu_opcode;//If it is R type, then we use q_imem[6:2], otherwise, set default to 00000;
+	 wire [4:0] alu_opcode;//If it is R type, then we use q_imem[6:2], otherwise, set default to 00000;
 	 assign alu_opcode=f1?5'b00000:f2?5'b00000:f3?5'b00000:q_imem[6:2];
-	 //wire [31:0] data_reg_write;//set a temporary variable for the output for alu
+	 wire [31:0] data_reg_write;//set a temporary variable for the output for alu
 	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
 	 wire alu_flag;
 	 //wire enableTwo;
