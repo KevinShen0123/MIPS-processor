@@ -70,8 +70,10 @@ module processor(
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
     data_readRegB,
-data_reg_write, aluinput, alu_opcode,sximmed,	 // I: Data from port B of regfile
+data_reg_write, aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo	 // I: Data from port B of regfile
 );
+output enableTwo;
+output [31:0] data_writeTwo;
 output [31:0]data_reg_write;
     // Control signals
     input clock, reset;
@@ -140,7 +142,7 @@ output [31:0]data_reg_write;
 	 //wire [31:0] data_reg_write;//set a temporary variable for the output for alu
 	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
 	 wire alu_flag;
-	 wire enableTwo;
+	 //wire enableTwo;
      assign alu_flag=f2?0:f3?0:1;//decide whether we need alu in R type or not, if sw or lw, we do not need alu
 	 and and1(enableTwo,alu_flag, overflow);// 
 	 cmp cmp4(f4,q_imem[31:27],5'b00000);

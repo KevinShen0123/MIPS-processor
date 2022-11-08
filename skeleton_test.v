@@ -11,11 +11,12 @@
 
 module skeleton_test(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
 address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,ctrl_writeReg,ctrl_readRegA, ctrl_readRegB,
-data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,sximmed);
+data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo);
+	output enableTwo;
 	output[31:0]aluinput;
     output[4:0]	alu_opcode;
     input clock, reset;
-	 output [31:0]data_reg_write,sximmed;
+	 output [31:0]data_reg_write,sximmed,data_writeTwo;
     /* 
         Create four clocks for each module from the original input "clock".
         These four outputs will be used to run the clocked elements of your processor on the grading side. 
@@ -101,7 +102,7 @@ data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,s
         data_writeReg,                  // O: Data to write to for regfile
         data_readRegA,                  // I: Data from port A of regfile
         data_readRegB,
-data_reg_write	,aluinput, alu_opcode,sximmed
+data_reg_write	,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo
 	  // I: Data from port B of regfile
     );
 
