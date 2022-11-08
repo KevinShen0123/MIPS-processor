@@ -146,8 +146,6 @@ output [31:0]data_reg_write;
 	 cmp cmp5(f5,q_imem[6:2],5'b00000);
 	 assign data_writeTwo=f4?f5?32'h0001:32'h0003:32'h0002;
 	  wire[31:0] s1,s2;
-	 regfile reg1(clock, enableTwo, ctrl_reset, 32'h001E,
-	ctrl_readRegA, ctrl_readRegB, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
 	 //and we will assign data_writeReg to a new value for I-type later.
 	 // sw and lw operation
 	 assign lw_yes=f3?1:0;
@@ -156,5 +154,7 @@ output [31:0]data_reg_write;
 	 assign data=data_readRegB;
 	 assign wren=sw_yes;
 	 assign data_writeReg=alu_flag?data_reg_write:lw_yes?q_dmem:data_reg_write;
-
+          regfile reg1(clock, enableTwo, ctrl_reset, 32'h001E,
+	ctrl_writeReg, ctrl_readRegB, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
+	assign data=s1;
 endmodule
