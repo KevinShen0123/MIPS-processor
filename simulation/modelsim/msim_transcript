@@ -12,179 +12,179 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/clock_div4.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:25 on Nov 03,2022
+# Start time: 14:14:59 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/clock_div4.v 
 # -- Compiling module clk_div4
 # 
 # Top level modules:
 # 	clk_div4
-# End time: 21:21:25 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:14:59 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/regfile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:25 on Nov 03,2022
+# Start time: 14:14:59 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/regfile.v 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 21:21:26 on Nov 03,2022, Elapsed time: 0:00:01
+# End time: 14:14:59 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/processor.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:26 on Nov 03,2022
+# Start time: 14:14:59 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/processor.v 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 21:21:26 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:14:59 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/imem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:26 on Nov 03,2022
+# Start time: 14:14:59 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/imem.v 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 21:21:26 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:14:59 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/dmem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:26 on Nov 03,2022
+# Start time: 14:15:00 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/dmem.v 
 # -- Compiling module dmem
 # 
 # Top level modules:
 # 	dmem
-# End time: 21:21:26 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:00 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/alu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:26 on Nov 03,2022
+# Start time: 14:15:00 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/alu.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 21:21:26 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:00 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/dffe.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:26 on Nov 03,2022
+# Start time: 14:15:00 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/dffe.v 
 # -- Compiling module dffe_ref
 # 
 # Top level modules:
 # 	dffe_ref
-# End time: 21:21:26 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:00 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/five_to_thirtytwo_decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:26 on Nov 03,2022
+# Start time: 14:15:00 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/five_to_thirtytwo_decoder.v 
 # -- Compiling module five_to_thirtytwo_decoder
 # 
 # Top level modules:
 # 	five_to_thirtytwo_decoder
-# End time: 21:21:26 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:00 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/pc.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:26 on Nov 03,2022
+# Start time: 14:15:00 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/pc.v 
 # -- Compiling module pc
 # 
 # Top level modules:
 # 	pc
-# End time: 21:21:26 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:00 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/sx.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:26 on Nov 03,2022
+# Start time: 14:15:00 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/sx.v 
 # -- Compiling module sx
 # 
 # Top level modules:
 # 	sx
-# End time: 21:21:26 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:00 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/three_to_eight_decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:26 on Nov 03,2022
+# Start time: 14:15:00 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/three_to_eight_decoder.v 
 # -- Compiling module three_to_eight_decoder
 # 
 # Top level modules:
 # 	three_to_eight_decoder
-# End time: 21:21:26 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:00 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/two_to_four_decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:27 on Nov 03,2022
+# Start time: 14:15:00 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/two_to_four_decoder.v 
 # -- Compiling module two_to_four_decoder
 # 
 # Top level modules:
 # 	two_to_four_decoder
-# End time: 21:21:27 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:00 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/cmp.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:27 on Nov 03,2022
+# Start time: 14:15:01 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/cmp.v 
 # -- Compiling module cmp
 # 
 # Top level modules:
 # 	cmp
-# End time: 21:21:27 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:01 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/d_f.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:27 on Nov 03,2022
+# Start time: 14:15:01 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/d_f.v 
 # -- Compiling module d_f
 # 
 # Top level modules:
 # 	d_f
-# End time: 21:21:27 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:01 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/write_port.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:27 on Nov 03,2022
+# Start time: 14:15:01 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/write_port.v 
 # -- Compiling module write_port
 # 
 # Top level modules:
 # 	write_port
-# End time: 21:21:27 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:01 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/skeleton_test.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:27 on Nov 03,2022
+# Start time: 14:15:01 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/skeleton_test.v 
 # -- Compiling module skeleton_test
 # 
 # Top level modules:
 # 	skeleton_test
-# End time: 21:21:27 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:01 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:27 on Nov 03,2022
+# Start time: 14:15:01 on Nov 08,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v 
 # -- Compiling module skeleton_test_tb
 # 
 # Top level modules:
 # 	skeleton_test_tb
-# End time: 21:21:27 on Nov 03,2022, Elapsed time: 0:00:00
+# End time: 14:15:01 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  skeleton_test_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" skeleton_test_tb 
-# Start time: 21:21:27 on Nov 03,2022
+# Start time: 14:15:01 on Nov 08,2022
 # Loading work.skeleton_test_tb
 # Loading work.skeleton_test
 # Loading work.clk_div4
@@ -220,6 +220,11 @@
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/reg1 File: C:/Users/zs149/Documents/github/550-cp4/regfile.v
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: zs149  Hostname: VCM-28359  ProcessID: 1632
+#           Attempting to use alternate WLF file "./wlftb1w54r".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftb1w54r
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -229,5 +234,5 @@
 # ** Note: $stop    : C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v(41)
 #    Time: 4020 ns  Iteration: 1  Instance: /skeleton_test_tb
 # Break in Module skeleton_test_tb at C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v line 41
-# End time: 21:30:28 on Nov 03,2022, Elapsed time: 0:09:01
-# Errors: 0, Warnings: 6
+# End time: 14:19:21 on Nov 08,2022, Elapsed time: 0:04:20
+# Errors: 0, Warnings: 8

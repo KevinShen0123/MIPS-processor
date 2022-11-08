@@ -150,11 +150,11 @@ output [31:0]data_reg_write;
 	ctrl_readRegA, ctrl_readRegB, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
 	 //and we will assign data_writeReg to a new value for I-type later.
 	 // sw and lw operation
-	 assign lw_yes=f2?1:0;
-	 assign sw_yes=f3?1:0;
-	 assign address_dmem=1?data_reg_write[11:0]:data_reg_write[11:0];
-	 assign data=1?aluinput:aluinput;
-	 assign wren=1?sw_yes:sw_yes;
+	 assign lw_yes=f3?1:0;
+	 assign sw_yes=f2?1:0;
+	 assign address_dmem=data_reg_write[11:0];
+	 assign data=data_readRegB;
+	 assign wren=sw_yes;
 	 assign data_writeReg=alu_flag?data_reg_write:lw_yes?q_dmem:data_reg_write;
 
 endmodule

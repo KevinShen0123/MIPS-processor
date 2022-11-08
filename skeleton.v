@@ -19,12 +19,15 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
         based on proper functioning with this clock.
     */
     output imem_clock, dmem_clock, processor_clock, regfile_clock;
+	 wire clk_div;
    
 
-    clk_div4 pc_clk(.clk_out(processor_clock), .clk(clock), .reset(reset));
+    clk_div4 pc_clk1(.clk_out(clk_div), .clk(clock), .reset(reset));
+	 
+	assign processor_clock = ~clk_div;
     assign dmem_clock = clock;
     assign imem_clock = dmem_clock;
-    assign regfile_clock = processor_clock;
+    assign regfile_clock = ~clk_div;
 
 
 

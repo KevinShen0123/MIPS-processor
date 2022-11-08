@@ -26,11 +26,12 @@ data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,s
     output imem_clock, dmem_clock, processor_clock, regfile_clock;
    
 
-    clk_div4 pc_clk(.clk_out(processor_clock), .clk(clock), .reset(reset));
+   clk_div4 pc_clk1(.clk_out(clk_div), .clk(clock), .reset(reset));
+	 
+	 assign processor_clock = ~clk_div;
     assign dmem_clock = clock;
     assign imem_clock = dmem_clock;
-    assign regfile_clock = processor_clock;
-
+    assign regfile_clock = ~clk_div;
 
 
     /** IMEM **/
@@ -47,10 +48,10 @@ data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,s
     /** DMEM **/
     // Figure out how to generate a Quartus syncram component and commit the generated verilog file.
     // Make sure you configure it correctly!
-   inout [11:0] address_dmem;
-    inout [31:0] data;
-    inout wren;
-    inout [31:0] q_dmem;
+   output [11:0] address_dmem;
+    output [31:0] data;
+    output wren;
+    output [31:0] q_dmem;
     dmem my_dmem(
         .address    (address_dmem),       // address of data
         .clock      (dmem_clock),                  // may need to invert the clock

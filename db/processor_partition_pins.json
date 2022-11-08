@@ -376,6 +376,134 @@
 					"strict" : false
 				},
 				{
+					"name" : "q_dmem[0]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[1]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[2]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[3]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[4]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[5]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[6]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[7]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[8]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[9]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[10]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[11]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[12]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[13]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[14]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[15]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[16]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[17]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[18]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[19]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[20]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[21]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[22]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[23]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[24]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[25]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[26]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[27]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[28]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[29]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[30]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[31]",
+					"strict" : false
+				},
+				{
 					"name" : "ctrl_writeEnable",
 					"strict" : false
 				},
@@ -821,6 +949,134 @@
 				},
 				{
 					"name" : "data_readRegB[31]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[9]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[15]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[16]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[17]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[18]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[19]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[20]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[21]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[22]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[23]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[24]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[25]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[26]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[27]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[28]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[29]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[30]",
+					"strict" : false
+				},
+				{
+					"name" : "data_reg_write[31]",
 					"strict" : false
 				},
 				{
