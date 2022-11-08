@@ -155,6 +155,5 @@ output [31:0]data_reg_write;
 	 assign wren=sw_yes;
 	 assign data_writeReg=alu_flag?data_reg_write:lw_yes?q_dmem:data_reg_write;
           regfile reg1(clock, enableTwo, ctrl_reset, 32'h001E,
-	ctrl_writeReg, ctrl_readRegB, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
-	assign data=s1;
+	ctrl_readRegA, ctrl_readRegB, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
 endmodule
