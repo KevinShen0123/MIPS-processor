@@ -1,35 +1,23 @@
-module alu(data_operandA, data_operandB, ctrl_ALUopcode,
-			ctrl_shiftamt, data_result, isNotEqual, isLessThan, overflow);
-
-	input [31:0] data_operandA, data_operandB;
-	input [4:0] ctrl_ALUopcode, ctrl_shiftamt;
+module alu(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_result, isNotEqual, isLessThan, overflow);
+	
+	input [31:0] data_operandA, data_operandB; input [4:0] ctrl_ALUopcode, ctrl_shiftamt;
 	output [31:0] data_result;
 	output isNotEqual, isLessThan, overflow;
+
+	wire [31:0] sl,sr,adsub,andd,orr, w0,w1,w2,w3;
 	
-	wire signed[31:0] inner_A, inner_B;
-	reg signed[31:0] inner_result;
-	reg inner_cout;
+	shiftleft left(data_operandA, ctrl_shiftamt, sl);
+	shiftright right(data_operandA, ctrl_shiftamt, sr);
+	csa csa(data_operandA, data_operandB, ctrl_ALUopcode, adsub, overflow, isNotEqual, isLessThan);
+	andop andop(data_operandA, data_operandB, andd);
+	orop orop(data_operandA, data_operandB, orr);
 	
-	assign inner_A = data_operandA;
-	assign inner_B = data_operandB;
-	assign data_result = inner_result;
 	
-	assign isNotEqual = inner_A != inner_B;
-	assign isLessThan = inner_A < inner_B;
-	assign overflow = inner_cout != inner_result[31];
+	mux mux0[31:0](sr[31:0], sl[31:0], ctrl_ALUopcode[0], w0[31:0]);
+	mux mux1[31:0](orr[31:0], andd[31:0], ctrl_ALUopcode[0], w1[31:0]);
+	mux mux2[31:0](adsub[31:0], w0[31:0], ctrl_ALUopcode[1], w2[31:0]);
+	mux mux3[31:0](w1[31:0], adsub[31:0], ctrl_ALUopcode[1], w3[31:0]);
+	mux mux4[31:0](w2[31:0], w3[31:0], ctrl_ALUopcode[2], data_result[31:0]);
 	
-	always @(ctrl_ALUopcode or inner_A or inner_B or ctrl_shiftamt)
-		begin
-			// Default state for other ctrl_ALUopcode states
-			{inner_cout, inner_result} = inner_A + inner_B;
-			case (ctrl_ALUopcode)
-				0 : {inner_cout, inner_result} = inner_A + inner_B;  // ADD
-				1 : {inner_cout, inner_result} = inner_A - inner_B;	// SUBTRACT
-				2 : inner_result = inner_A & inner_B;  			// AND
-				3 : inner_result = inner_A | inner_B;  			// OR
-				4 : inner_result = inner_A << ctrl_shiftamt;		// SLL
-				5 : inner_result = inner_A >>> ctrl_shiftamt;	// SRA
-			endcase
-		end
 	
 endmodule

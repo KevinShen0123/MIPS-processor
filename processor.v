@@ -74,7 +74,10 @@ module processor(
 );
 
 
-    
+  
+
+
+
     wire [31:0] data_writeTwo;
     // Control signals
     input clock, reset;
