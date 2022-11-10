@@ -5,12 +5,12 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/imem.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/clock_div4.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/regfile.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/processor.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/dmem.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/alu.v}
-vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/imem.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/dffe.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/five_to_thirtytwo_decoder.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/pc.v}
