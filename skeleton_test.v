@@ -30,8 +30,8 @@ data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,s
    clk_div4 pc_clk1(.clk_out(clk_div), .clk(clock), .reset(reset));
 	 
 	 assign processor_clock = ~clk_div;
-    assign dmem_clock = clock;
-    assign imem_clock = dmem_clock;
+    assign dmem_clock = ~clock;
+    assign imem_clock = clock;
     assign regfile_clock = ~clk_div;
 
 

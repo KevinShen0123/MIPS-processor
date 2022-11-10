@@ -7,7 +7,7 @@ module regfile(
 	ctrl_readRegB,
 	data_writeReg,
 	data_readRegA,
-	data_readRegB,
+	data_readRegB
 
 );
 
