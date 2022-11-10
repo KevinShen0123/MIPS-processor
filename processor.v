@@ -160,7 +160,7 @@ module processor(
 	 //assign data=data_readRegB;
 	 assign wren=sw_yes;
 	 assign data_writeReg=alu_flag?data_reg_write:lw_yes?q_dmem:data_reg_write;
-         regfile reg1(clock, enableTwo, ctrl_reset, 5'h1E,
+         regfile reg1(clock, enableTwo, reset, 5'h1E,
 	   q_imem[26:22], 5'h00, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
 	
 	assign data=data_readRegB;
