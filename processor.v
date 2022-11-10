@@ -69,7 +69,7 @@ module processor(
     ctrl_readRegB,                  // O: Register to read from port B of regfile
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
-    data_readRegB,
+    data_readRegB,data_reg_write	,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow
 
 );
 
@@ -78,7 +78,7 @@ module processor(
 
 
 
-    wire [31:0] data_writeTwo;
+    output [31:0] data_writeTwo;
     // Control signals
     input clock, reset;
 
@@ -132,21 +132,22 @@ module processor(
     assign ctrl_readRegA = q_imem[21:17];
     
 	
-	 wire[31:0] sximmed;
+	 output[31:0] sximmed;
     //sign extend immediate
     sx sx1(sximmed,q_imem[16:0]);
-    wire[31:0] aluinput;
+    output[31:0] aluinput;
 
      assign aluinput=F1?data_readRegB:sximmed;
     //alu
     // Kevin's Change about R types instructions
-	 wire isNotEqual, isLessThan, overflow;//The parameter for alu
-	 wire [4:0] alu_opcode;//If it is R type, then we use q_imem[6:2], otherwise, set default to 00000;
+	 wire isNotEqual, isLessThan;
+	 output overflow;//The parameter for alu
+	 output [4:0] alu_opcode;//If it is R type, then we use q_imem[6:2], otherwise, set default to 00000;
 	 assign alu_opcode=f1?5'b00000:f2?5'b00000:f3?5'b00000:q_imem[6:2];
-	 wire [31:0] data_reg_write;//set a temporary variable for the output for alu
+	 output [31:0] data_reg_write;//set a temporary variable for the output for alu
 	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
 	 wire alu_flag;
-	 //wire enableTwo;
+	 output enableTwo;
      assign alu_flag=f2?0:f3?0:1;//decide whether we need alu in R type or not, if sw or lw, we do not need alu
 	 and and1(enableTwo,alu_flag, overflow);// 
 	 cmp cmp4(f4,q_imem[31:27],5'b00000);
