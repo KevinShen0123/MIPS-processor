@@ -1,7 +1,8 @@
 # regfile
 ## Name and NetID
-Hunte Shen(Zhihang Shen) zs149
-Kevin Shen             ks713
+Name: Hunter Shen(Zhihang Shen) NetID: zs149
+Name: Kevin Shen            NetID: ks713
+Name: Caroline Chen         NetID: xc198
 ## Design implementation regfile
 Our goal for this project checkpoint is to create a 32-bit regfile which can fetch and hold data for CPU in a high speed. The regfile has one write port and two read ports.
 1. we need to create a 32-bits dffe use 32 1-bit dffe, and this can be simply done by using loop.
