@@ -128,7 +128,7 @@ module processor(
 	 assign lw_yes=f3?1:0;
 	 assign sw_yes=f2?1:0;
     assign ctrl_readRegB=F1?q_imem[16:12]:sw_yes?q_imem[26:22]:q_imem[21:17];
-    assign ctrl_writeReg = q_imem[26:22];
+   // assign ctrl_writeReg = q_imem[26:22];
     assign ctrl_readRegA = q_imem[21:17];
     
 	
@@ -159,9 +159,10 @@ module processor(
 	 assign address_dmem=data_reg_write[11:0];
 	 //assign data=data_readRegB;
 	 assign wren=sw_yes;
-	 assign data_writeReg=alu_flag?data_reg_write:lw_yes?q_dmem:data_reg_write;
-         regfile reg1(clock, enableTwo, reset, 5'h1E,
-	   q_imem[26:22], 5'h00, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
+	 assign ctrl_writeReg = enableTwo?5'h1E:q_imem[26:22];
+	 assign data_writeReg=alu_flag?overflow?data_writeTwo:data_reg_write:lw_yes?q_dmem:data_reg_write;
+         //regfile reg1(clock, enableTwo, reset, 5'h1E,
+	//   q_imem[26:22], 5'h00, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
 	
 	assign data=data_readRegB;
 endmodule
