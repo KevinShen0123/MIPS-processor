@@ -6,7 +6,7 @@ module comp32(output_comp32, inputA, inputB);
  wire isNotEqual, isLessThan;
  
  
- alu alu_comp32(.data_operandA(inputA), .data_operandB(inputB), .ctrl_ALUopcode(5'b00001), .isNotEqual(isNotEqual), .isLessThan(isNotEqual));
+ alu alu_comp32(.data_operandA(inputA), .data_operandB(inputB), .ctrl_ALUopcode(5'b00001), .isNotEqual(isNotEqual), .isLessThan(isLessThan));
  
  //equal:0, less than: 1, larger than: 2
  
