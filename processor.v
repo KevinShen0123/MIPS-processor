@@ -144,6 +144,7 @@ module processor(
     //alu
     // Kevin's Change about R types instructions
 	 wire isNotEqual, isLessThan;
+	 wire [31:0] sign_extendT;
 	 output overflow;//The parameter for alu
 	 output [4:0] alu_opcode;//If it is R type, then we use q_imem[6:2], otherwise, set default to 00000;
 	 assign alu_opcode=f1?5'b00000:f2?5'b00000:f3?5'b00000:q_imem[6:2];
@@ -162,8 +163,8 @@ module processor(
 	 assign address_dmem=data_reg_write[11:0];
 	 //assign data=data_readRegB;
 	 assign wren=sw_yes;
-	 assign ctrl_writeReg = enableTwo?5'h1E:q_imem[26:22];
-	 assign data_writeReg=alu_flag?overflow?data_writeTwo:data_reg_write:lw_yes?q_dmem:data_reg_write;
+	 assign ctrl_writeReg = enableTwo?5'h1E:is_jal?5'h1F:is_setx?5'h1E:q_imem[26:22];
+	 assign data_writeReg=alu_flag?overflow?data_writeTwo:data_reg_write:lw_yes?q_dmem:is_jal?pc_plusone:is_setx?sign_extendT:data_reg_write;
          //regfile reg1(clock, enableTwo, reset, 5'h1E,
 	//   q_imem[26:22], 5'h00, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
 	
@@ -171,12 +172,24 @@ module processor(
 	
 	
 	
-	
+	//define is_j
 	cmp cmp6(is_j,q_imem[31:27],5'b00001);
+	//define is_jal
+	cmp cmp8(is_jal,q_imem[31:27],5'b00011);
+	//define is_setx
+	cmp cmp9(is_setx, q_imem[31:27], 5'b10101);
+	//define is_bne
+	cmp cmp10(is_bne, q_imem[31:27], 5'b00010);
+	//define is_blt
+	cmp cmp11(is_blt, q_imem[31:27], 5'b00110);
+	//deifne is_bex
+	cmp cmp12(is_bex, q_imem[31:27], 5'b10110);
 
 
 	
 	assign pc_in[31:27] = is_j ?5'b00000 :is_jr?data_readRegB[31:27]:pc_plusone[31:27] ;
-	assign pc_in[26:0] = is_j ?q_imem[26:0]:is_jr?data_readRegB[26:0]:pc_plusone[26:0];
+	assign pc_in[26:0] = is_j ?q_imem[26:0]:is_jal ?q_imem[26:0]:is_jr?data_readRegB[26:0]:pc_plusone[26:0];
+	
+	
 	
 endmodule
