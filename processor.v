@@ -106,10 +106,10 @@ module processor(
 
 
     //PC & PC + 4
-     wire [31:0] pc_in, pc_out, insn_out;
+     wire [31:0] pc_plusone, pc_in, pc_out, insn_out;
 	  wire dummy,dummy1,dummy2;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
-    alu alu1(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, dummy1, dummy2,dummy);   
+    alu alu1(pc_out, 32'd1, 5'b00000, 1'b0, pc_plusone, dummy1, dummy2,dummy);   
      //address_imem Kevin's Change
 	 assign address_imem=pc_out[11:0];
 
@@ -125,9 +125,12 @@ module processor(
 	 cmp cmp1(f1,q_imem[31:27],5'b00101);
 	  cmp cmp2(f2,q_imem[31:27],5'b00111);
 	 cmp cmp3(f3,q_imem[31:27],5'b01000);
+	 	cmp cmp7(is_jr,q_imem[31:27],5'b00100);
 	 assign lw_yes=f3?1:0;
 	 assign sw_yes=f2?1:0;
-    assign ctrl_readRegB=F1?q_imem[16:12]:sw_yes?q_imem[26:22]:q_imem[21:17];
+	 wire sw_jr;
+	 or or2(sw_jr,sw_yes,is_jr);
+    assign ctrl_readRegB=F1?q_imem[16:12]:sw_jr?q_imem[26:22]:q_imem[21:17];
    // assign ctrl_writeReg = q_imem[26:22];
     assign ctrl_readRegA = q_imem[21:17];
     
@@ -165,4 +168,15 @@ module processor(
 	//   q_imem[26:22], 5'h00, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
 	
 	assign data=data_readRegB;
+	
+	
+	
+	
+	cmp cmp6(is_j,q_imem[31:27],5'b00001);
+
+
+	
+	assign pc_in[31:27] = is_j ?5'b00000 :pc_plusone[31:27] ;
+	assign pc_in[26:0] = is_j ?q_imem[31:27]:pc_plusone[26:0];
+	
 endmodule
