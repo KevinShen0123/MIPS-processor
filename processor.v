@@ -176,7 +176,7 @@ module processor(
 
 
 	
-	assign pc_in[31:27] = is_j ?5'b00000 :pc_plusone[31:27] ;
-	assign pc_in[26:0] = is_j ?q_imem[31:27]:pc_plusone[26:0];
+	assign pc_in[31:27] = is_j ?5'b00000 :is_jr?data_readRegB[31:27]:pc_plusone[31:27] ;
+	assign pc_in[26:0] = is_j ?q_imem[26:0]:is_jr?data_readRegB[26:0]:pc_plusone[26:0];
 	
 endmodule
