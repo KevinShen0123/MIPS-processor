@@ -130,9 +130,12 @@ module processor(
 	 assign sw_yes=f2?1:0;
 	 wire sw_jr;
 	 or or2(sw_jr,sw_yes,is_jr);
+	 //While is bne or blt
+	 wire is_bne_blt;
+	 or or3(is_bne_blt, is_bne, is_blt);
     assign ctrl_readRegB=F1?q_imem[16:12]:sw_jr?q_imem[26:22]:q_imem[21:17];
    // assign ctrl_writeReg = q_imem[26:22];
-    assign ctrl_readRegA = q_imem[21:17];
+    assign ctrl_readRegA = is_bne_blt? q_imem[26:22]:is_bex?5'h1E:q_imem[21:17];
     
 	
 	 output[31:0] sximmed;
@@ -185,11 +188,28 @@ module processor(
 	//deifne is_bex
 	cmp cmp12(is_bex, q_imem[31:27], 5'b10110);
 
-
 	
-	assign pc_in[31:27] = is_j ?5'b00000 :is_jr?data_readRegB[31:27]:pc_plusone[31:27] ;
-	assign pc_in[26:0] = is_j ?q_imem[26:0]:is_jal ?q_imem[26:0]:is_jr?data_readRegB[26:0]:pc_plusone[26:0];
+	//rd rs compare
+	wire [1:0] rd_rs_comp, r30_zero_comp;
+	wire rd_not_equal_rs, rd_less_than_rs, r30_not_zero, correct_bex, is_j_cbex;
+	comp32 rd_rs_comp32(rd_rs_comp, data_readRegA, data_readRegB);
+	xor (rd_not_equal_rs, rd_rs_comp[0], rd_rs_comp[1]);
+	alu alu_less_than(.data_operandA(data_readRegA), .data_operandB(data_readRegB), .ctrl_ALUopcode(5'b00001), .isLessThan(rd_less_than_rs));
 	
+	comp32 r30_0_comp32(r30_zero_comp, data_readRegA, 32'b0);
+	xor (r30_not_zero, r30_zero_comp[0], r30_zero_comp[1]);
+	
+	and (correct_bex, is_bex, r30_not_zero);
+	or (is_j_cbex, correct_bex, is_j);
+	
+	assign pc_in1[31:27] = is_j_cbex ?5'b00000 :is_jr?data_readRegB[31:27]:pc_plusone[31:27] ;
+	assign pc_in1[26:0] = is_j_cbex ?q_imem[26:0]:is_jal ?q_imem[26:0]:is_jr?data_readRegB[26:0]:pc_plusone[26:0];
+	
+	wire [31:0] pc_in1, pc_in2;
+	alu alu_pc_in2(.data_operandA(sximmed), .data_operandB(pc_plusone), .ctrl_ALUopcode(5'b00000),.data_result(pc_in2));
+	
+	
+	assign pc_in = is_bne?(rd_not_equal_rs? pc_in2:pc_plusone):is_blt?(rd_less_than_rs?pc_in2:pc_plusone):pc_plusone;
 	
 	
 endmodule
