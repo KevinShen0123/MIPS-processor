@@ -70,7 +70,7 @@ module processor(
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
     data_readRegB,
-	 data_reg_write	,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow
+	 data_reg_write	,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow,pc_in
 
 );
 
@@ -109,8 +109,10 @@ module processor(
 
     //PC & PC + 4
 
-     wire [31:0] pc_plusone, pc_in, pc_out, insn_out;
-	  wire dummy,dummy1,dummy2;
+     wire [31:0] pc_plusone, pc_out, insn_out;
+	  output [31:0] pc_in;
+	  wire dummy,dummy2;
+	  wire[4:0] dummy1; 
 
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
     alu alu1(pc_out, 32'd1, 5'b00000, 1'b0, pc_plusone, dummy1, dummy2,dummy);   
