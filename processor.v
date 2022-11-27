@@ -163,8 +163,11 @@ module processor(
 	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
 	 wire alu_flag;
 	 output enableTwo;
+	 wire enable_flag;
+	 
      assign alu_flag=F1?1:F2?1:0;//if it is R type or addi, use alu
-	 and and1(enableTwo,alu_flag, overflow);// 
+	 and and1(enable_flag,alu_flag, overflow);//
+	or or100(enableTwo,enable_flag,is_setx); 
 	 cmp cmp4(f4,q_imem[31:27],5'b00000);
 	 cmp cmp5(f5,q_imem[6:2],5'b00000);
 	 assign data_writeTwo=f4?f5?32'h0001:32'h0003:32'h0002;
@@ -196,6 +199,9 @@ module processor(
 	//deifne is_bex
 	cmp cmp12(is_bex, q_imem[31:27], 5'b10110);
 
+	//sign_extendT
+	assign sign_extendT[31:27] = 5'b00000;
+	assign sign_extendT[26:0] = q_imem[26:0];
 	
 	//rd rs compare
 	wire [1:0] rd_rs_comp, r30_zero_comp;
