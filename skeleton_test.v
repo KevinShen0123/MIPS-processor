@@ -105,7 +105,6 @@ data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,s
         data_writeReg,                  // O: Data to write to for regfile
         data_readRegA,                  // I: Data from port A of regfile
         data_readRegB,
-data_reg_write	,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow
 data_reg_write	,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow,pc_in
 	  // I: Data from port B of regfile
     );

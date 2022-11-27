@@ -1,6 +1,7 @@
 // ---------- SAMPLE TEST BENCH ----------
 `timescale 1 ns / 100 ps
 module skeleton_test_tb();
+	wire[31:0]pc_in;
     wire[31:0]aluinput;
     wire[4:0]	alu_opcode;
     reg clock, reset;
@@ -24,7 +25,7 @@ module skeleton_test_tb();
 
     skeleton_test myskeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
 address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,ctrl_writeReg,ctrl_readRegA, ctrl_readRegB,
-data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow);
+data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow,pc_in);
     // setting the initial values of all the reg
     initial
     begin
