@@ -71,445 +71,445 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
-data_writeTwo[2]             : A4        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
 VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
-data_readRegB[12]            : A6        : output : 2.5 V             :         : 8         : N              
-data[31]                     : A7        : output : 2.5 V             :         : 8         : N              
-data[1]                      : A8        : output : 2.5 V             :         : 8         : N              
+data[27]                     : A6        : output : 2.5 V             :         : 8         : N              
+q_dmem[16]                   : A7        : output : 2.5 V             :         : 8         : N              
+data_writeTwo[13]            : A8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
-aluinput[9]                  : A10       : output : 2.5 V             :         : 8         : N              
-data_readRegA[5]             : A11       : output : 2.5 V             :         : 8         : N              
-q_dmem[4]                    : A12       : output : 2.5 V             :         : 8         : N              
+data_reg_write[11]           : A10       : output : 2.5 V             :         : 8         : N              
+q_imem[5]                    : A11       : output : 2.5 V             :         : 8         : N              
+data_readRegA[6]             : A12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
 GND+                         : A14       :        :                   :         : 8         :                
 GND+                         : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-q_dmem[18]                   : A17       : output : 2.5 V             :         : 7         : N              
-data_writeReg[20]            : A18       : output : 2.5 V             :         : 7         : N              
-q_imem[21]                   : A19       : output : 2.5 V             :         : 7         : N              
+q_dmem[0]                    : A17       : output : 2.5 V             :         : 7         : N              
+data_writeReg[14]            : A18       : output : 2.5 V             :         : 7         : N              
+data[10]                     : A19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
-data_readRegB[17]            : A21       : output : 2.5 V             :         : 7         : N              
-data[17]                     : A22       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A23       :        :                   :         : 7         :                
+data_reg_write[16]           : A21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A22       :        :                   :         : 7         :                
+data_writeTwo[12]            : A23       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
-data_writeTwo[26]            : A25       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A25       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A26       :        :                   :         : 7         :                
 VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
 VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
 GND                          : AA2       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA3       :        :                   :         : 2         :                
-data_writeReg[16]            : AA4       : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA5       :        :                   :         : 2         :                
+data_writeTwo[11]            : AA4       : output : 2.5 V             :         : 2         : N              
+sximmed[20]                  : AA5       : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 2         :                
-data_reg_write[4]            : AA8       : output : 2.5 V             :         : 3         : N              
+data_writeTwo[17]            : AA7       : output : 2.5 V             :         : 2         : N              
+aluinput[8]                  : AA8       : output : 2.5 V             :         : 3         : N              
 GNDA1                        : AA9       : gnd    :                   :         :           :                
-data[28]                     : AA10      : output : 2.5 V             :         : 3         : N              
+data_reg_write[1]            : AA10      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
-data_readRegB[23]            : AA12      : output : 2.5 V             :         : 3         : N              
-q_dmem[1]                    : AA13      : output : 2.5 V             :         : 3         : N              
-q_dmem[0]                    : AA14      : output : 2.5 V             :         : 3         : N              
-address_imem[1]              : AA15      : output : 2.5 V             :         : 4         : N              
-data[22]                     : AA16      : output : 2.5 V             :         : 4         : N              
-aluinput[18]                 : AA17      : output : 2.5 V             :         : 4         : N              
+data_readRegA[20]            : AA12      : output : 2.5 V             :         : 3         : N              
+data_readRegA[28]            : AA13      : output : 2.5 V             :         : 3         : N              
+data_readRegA[30]            : AA14      : output : 2.5 V             :         : 3         : N              
+q_dmem[5]                    : AA15      : output : 2.5 V             :         : 4         : N              
+data_reg_write[21]           : AA16      : output : 2.5 V             :         : 4         : N              
+data_writeReg[31]            : AA17      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA19      :        :                   :         : 4         :                
 GNDA4                        : AA20      : gnd    :                   :         :           :                
-data_writeTwo[30]            : AA21      : output : 2.5 V             :         : 4         : N              
-data_writeTwo[14]            : AA22      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA23      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA24      :        :                   :         : 5         :                
-data_writeReg[8]             : AA25      : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA26      :        :                   :         : 5         :                
+q_dmem[19]                   : AA25      : output : 2.5 V             :         : 5         : N              
+ctrl_readRegB[0]             : AA26      : output : 2.5 V             :         : 5         : N              
 GND                          : AA27      : gnd    :                   :         :           :                
 VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
-q_dmem[5]                    : AB1       : output : 2.5 V             :         : 2         : N              
-data_reg_write[26]           : AB2       : output : 2.5 V             :         : 2         : N              
-data_writeReg[27]            : AB3       : output : 2.5 V             :         : 2         : N              
+data_readRegA[13]            : AB1       : output : 2.5 V             :         : 2         : N              
+data_readRegA[11]            : AB2       : output : 2.5 V             :         : 2         : N              
+data_readRegA[15]            : AB3       : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 2         :                
-data_writeTwo[29]            : AB5       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 2         :                
-sximmed[1]                   : AB7       : output : 2.5 V             :         : 3         : N              
-data[3]                      : AB8       : output : 2.5 V             :         : 3         : N              
-data_readRegB[3]             : AB9       : output : 2.5 V             :         : 3         : N              
-data_writeReg[6]             : AB10      : output : 2.5 V             :         : 3         : N              
-aluinput[7]                  : AB11      : output : 2.5 V             :         : 3         : N              
-ctrl_writeReg[2]             : AB12      : output : 2.5 V             :         : 3         : N              
-ctrl_writeEnable             : AB13      : output : 2.5 V             :         : 3         : N              
-q_imem[25]                   : AB14      : output : 2.5 V             :         : 3         : N              
-address_imem[2]              : AB15      : output : 2.5 V             :         : 4         : N              
-data_readRegB[22]            : AB16      : output : 2.5 V             :         : 4         : N              
-aluinput[19]                 : AB17      : output : 2.5 V             :         : 4         : N              
-data_reg_write[11]           : AB18      : output : 2.5 V             :         : 4         : N              
-data_readRegB[8]             : AB19      : output : 2.5 V             :         : 4         : N              
-ctrl_readRegB[3]             : AB20      : output : 2.5 V             :         : 4         : N              
+data_readRegA[26]            : AB7       : output : 2.5 V             :         : 3         : N              
+q_dmem[8]                    : AB8       : output : 2.5 V             :         : 3         : N              
+aluinput[0]                  : AB9       : output : 2.5 V             :         : 3         : N              
+address_imem[1]              : AB10      : output : 2.5 V             :         : 3         : N              
+aluinput[14]                 : AB11      : output : 2.5 V             :         : 3         : N              
+aluinput[30]                 : AB12      : output : 2.5 V             :         : 3         : N              
+q_imem[9]                    : AB13      : output : 2.5 V             :         : 3         : N              
+data_readRegA[18]            : AB14      : output : 2.5 V             :         : 3         : N              
+data_reg_write[24]           : AB15      : output : 2.5 V             :         : 4         : N              
+data[22]                     : AB16      : output : 2.5 V             :         : 4         : N              
+aluinput[25]                 : AB17      : output : 2.5 V             :         : 4         : N              
+aluinput[4]                  : AB18      : output : 2.5 V             :         : 4         : N              
+q_imem[19]                   : AB19      : output : 2.5 V             :         : 4         : N              
+data_writeReg[26]            : AB20      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 4         :                
-sximmed[24]                  : AB23      : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB25      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5         :                
+data_writeTwo[14]            : AB24      : output : 2.5 V             :         : 5         : N              
+data_readRegA[5]             : AB25      : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB26      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB27      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB28      :        :                   :         : 5         :                
-data_writeReg[28]            : AC1       : output : 2.5 V             :         : 2         : N              
-data[6]                      : AC2       : output : 2.5 V             :         : 2         : N              
-data_writeReg[29]            : AC3       : output : 2.5 V             :         : 2         : N              
+data_reg_write[7]            : AB27      : output : 2.5 V             :         : 5         : N              
+data_writeReg[10]            : AB28      : output : 2.5 V             :         : 5         : N              
+data_reg_write[9]            : AC1       : output : 2.5 V             :         : 2         : N              
+q_dmem[22]                   : AC2       : output : 2.5 V             :         : 2         : N              
+address_dmem[9]              : AC3       : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC4       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 2         :                
 GND                          : AC6       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC7       :        :                   :         : 3         :                
-q_dmem[7]                    : AC8       : output : 2.5 V             :         : 3         : N              
+q_imem[6]                    : AC7       : output : 2.5 V             :         : 3         : N              
+q_dmem[10]                   : AC8       : output : 2.5 V             :         : 3         : N              
 GND                          : AC9       : gnd    :                   :         :           :                
-data_writeReg[30]            : AC10      : output : 2.5 V             :         : 3         : N              
-data_readRegB[11]            : AC11      : output : 2.5 V             :         : 3         : N              
-q_imem[26]                   : AC12      : output : 2.5 V             :         : 3         : N              
+data_reg_write[0]            : AC10      : output : 2.5 V             :         : 3         : N              
+q_dmem[18]                   : AC11      : output : 2.5 V             :         : 3         : N              
+aluinput[27]                 : AC12      : output : 2.5 V             :         : 3         : N              
 GND                          : AC13      : gnd    :                   :         :           :                
-alu_opcode[4]                : AC14      : output : 2.5 V             :         : 3         : N              
-q_imem[27]                   : AC15      : output : 2.5 V             :         : 4         : N              
+data_reg_write[15]           : AC14      : output : 2.5 V             :         : 3         : N              
+alu_opcode[1]                : AC15      : output : 2.5 V             :         : 4         : N              
 GND                          : AC16      : gnd    :                   :         :           :                
-data_writeReg[18]            : AC17      : output : 2.5 V             :         : 4         : N              
-address_dmem[10]             : AC18      : output : 2.5 V             :         : 4         : N              
-sximmed[0]                   : AC19      : output : 2.5 V             :         : 4         : N              
+data_readRegA[16]            : AC17      : output : 2.5 V             :         : 4         : N              
+data_writeReg[27]            : AC18      : output : 2.5 V             :         : 4         : N              
+q_imem[21]                   : AC19      : output : 2.5 V             :         : 4         : N              
 GND                          : AC20      : gnd    :                   :         :           :                
-address_dmem[11]             : AC21      : output : 2.5 V             :         : 4         : N              
-sximmed[29]                  : AC22      : output : 2.5 V             :         : 4         : N              
+aluinput[16]                 : AC21      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC22      :        :                   :         : 4         :                
 GND                          : AC23      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC26      :        :                   :         : 5         :                
-aluinput[14]                 : AC27      : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC28      :        :                   :         : 5         :                
-data_writeReg[22]            : AD1       : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD2       :        :                   :         : 2         :                
-data_writeReg[2]             : AD3       : output : 2.5 V             :         : 2         : N              
-data[14]                     : AD4       : output : 2.5 V             :         : 3         : N              
-sximmed[20]                  : AD5       : output : 2.5 V             :         : 3         : N              
+aluinput[11]                 : AC27      : output : 2.5 V             :         : 5         : N              
+data_writeReg[30]            : AC28      : output : 2.5 V             :         : 5         : N              
+address_imem[8]              : AD1       : output : 2.5 V             :         : 2         : N              
+data[21]                     : AD2       : output : 2.5 V             :         : 2         : N              
+address_imem[0]              : AD3       : output : 2.5 V             :         : 2         : N              
+sximmed[16]                  : AD4       : output : 2.5 V             :         : 3         : N              
+sximmed[29]                  : AD5       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD7       :        :                   :         : 3         :                
-data_readRegB[0]             : AD8       : output : 2.5 V             :         : 3         : N              
+data_readRegB[18]            : AD7       : output : 2.5 V             :         : 3         : N              
+ctrl_readRegB[4]             : AD8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
-aluinput[24]                 : AD10      : output : 2.5 V             :         : 3         : N              
-data[11]                     : AD11      : output : 2.5 V             :         : 3         : N              
-q_dmem[26]                   : AD12      : output : 2.5 V             :         : 3         : N              
+q_dmem[20]                   : AD10      : output : 2.5 V             :         : 3         : N              
+q_dmem[6]                    : AD11      : output : 2.5 V             :         : 3         : N              
+sximmed[9]                   : AD12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
-data_writeTwo[1]             : AD14      : output : 2.5 V             :         : 3         : N              
-sximmed[15]                  : AD15      : output : 2.5 V             :         : 4         : N              
+q_imem[11]                   : AD14      : output : 2.5 V             :         : 3         : N              
+data_readRegA[23]            : AD15      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
-ctrl_readRegB[0]             : AD17      : output : 2.5 V             :         : 4         : N              
-data_readRegA[16]            : AD18      : output : 2.5 V             :         : 4         : N              
-q_imem[0]                    : AD19      : output : 2.5 V             :         : 4         : N              
+data_readRegA[25]            : AD17      : output : 2.5 V             :         : 4         : N              
+data_writeReg[12]            : AD18      : output : 2.5 V             :         : 4         : N              
+aluinput[9]                  : AD19      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
-q_imem[12]                   : AD21      : output : 2.5 V             :         : 4         : N              
-sximmed[30]                  : AD22      : output : 2.5 V             :         : 4         : N              
+q_dmem[26]                   : AD21      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :         : 4         :                
 VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
-data[18]                     : AD24      : output : 2.5 V             :         : 4         : N              
-q_imem[16]                   : AD25      : output : 2.5 V             :         : 4         : N              
-sximmed[18]                  : AD26      : output : 2.5 V             :         : 5         : N              
+data[24]                     : AD24      : output : 2.5 V             :         : 4         : N              
+data[14]                     : AD25      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD26      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD28      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE1       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE2       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE5       :        :                   :         : 3         :                
-data_readRegB[14]            : AE6       : output : 2.5 V             :         : 3         : N              
-q_imem[2]                    : AE7       : output : 2.5 V             :         : 3         : N              
-sximmed[2]                   : AE8       : output : 2.5 V             :         : 3         : N              
-aluinput[8]                  : AE9       : output : 2.5 V             :         : 3         : N              
-data_writeReg[26]            : AE10      : output : 2.5 V             :         : 3         : N              
-data_writeReg[11]            : AE11      : output : 2.5 V             :         : 3         : N              
-data_writeTwo[0]             : AE12      : output : 2.5 V             :         : 3         : N              
-aluinput[29]                 : AE13      : output : 2.5 V             :         : 3         : N              
-data_reg_write[14]           : AE14      : output : 2.5 V             :         : 3         : N              
-q_imem[30]                   : AE15      : output : 2.5 V             :         : 4         : N              
-address_imem[9]              : AE16      : output : 2.5 V             :         : 4         : N              
-ctrl_readRegB[1]             : AE17      : output : 2.5 V             :         : 4         : N              
-q_imem[17]                   : AE18      : output : 2.5 V             :         : 4         : N              
-data_writeReg[5]             : AE19      : output : 2.5 V             :         : 4         : N              
-aluinput[17]                 : AE20      : output : 2.5 V             :         : 4         : N              
-ctrl_readRegB[2]             : AE21      : output : 2.5 V             :         : 4         : N              
-q_dmem[17]                   : AE22      : output : 2.5 V             :         : 4         : N              
-data[8]                      : AE23      : output : 2.5 V             :         : 4         : N              
-sximmed[12]                  : AE24      : output : 2.5 V             :         : 4         : N              
-data_readRegB[7]             : AE25      : output : 2.5 V             :         : 4         : N              
+sximmed[26]                  : AE5       : output : 2.5 V             :         : 3         : N              
+sximmed[19]                  : AE6       : output : 2.5 V             :         : 3         : N              
+data_readRegA[14]            : AE7       : output : 2.5 V             :         : 3         : N              
+aluinput[7]                  : AE8       : output : 2.5 V             :         : 3         : N              
+aluinput[1]                  : AE9       : output : 2.5 V             :         : 3         : N              
+address_dmem[8]              : AE10      : output : 2.5 V             :         : 3         : N              
+address_imem[11]             : AE11      : output : 2.5 V             :         : 3         : N              
+ctrl_writeReg[3]             : AE12      : output : 2.5 V             :         : 3         : N              
+alu_opcode[2]                : AE13      : output : 2.5 V             :         : 3         : N              
+q_dmem[11]                   : AE14      : output : 2.5 V             :         : 3         : N              
+data_readRegA[24]            : AE15      : output : 2.5 V             :         : 4         : N              
+q_dmem[25]                   : AE16      : output : 2.5 V             :         : 4         : N              
+q_dmem[31]                   : AE17      : output : 2.5 V             :         : 4         : N              
+aluinput[23]                 : AE18      : output : 2.5 V             :         : 4         : N              
+data_writeReg[13]            : AE19      : output : 2.5 V             :         : 4         : N              
+data_writeReg[6]             : AE20      : output : 2.5 V             :         : 4         : N              
+data_writeReg[25]            : AE21      : output : 2.5 V             :         : 4         : N              
+data_reg_write[31]           : AE22      : output : 2.5 V             :         : 4         : N              
+q_imem[17]                   : AE23      : output : 2.5 V             :         : 4         : N              
+data_readRegB[14]            : AE24      : output : 2.5 V             :         : 4         : N              
+data_reg_write[10]           : AE25      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE26      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE28      :        :                   :         : 5         :                
 GND                          : AF1       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF2       :        :                   :         : 2         :                
-sximmed[27]                  : AF3       : output : 2.5 V             :         : 3         : N              
-data_writeTwo[15]            : AF4       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF5       :        :                   :         : 3         :                
-sximmed[22]                  : AF6       : output : 2.5 V             :         : 3         : N              
-data_readRegB[29]            : AF7       : output : 2.5 V             :         : 3         : N              
-q_dmem[24]                   : AF8       : output : 2.5 V             :         : 3         : N              
-data[29]                     : AF9       : output : 2.5 V             :         : 3         : N              
-aluinput[13]                 : AF10      : output : 2.5 V             :         : 3         : N              
-data_writeReg[15]            : AF11      : output : 2.5 V             :         : 3         : N              
-q_imem[23]                   : AF12      : output : 2.5 V             :         : 3         : N              
-data_writeReg[7]             : AF13      : output : 2.5 V             :         : 3         : N              
-q_dmem[11]                   : AF14      : output : 2.5 V             :         : 3         : N              
-q_imem[29]                   : AF15      : output : 2.5 V             :         : 4         : N              
-address_imem[5]              : AF16      : output : 2.5 V             :         : 4         : N              
-address_imem[3]              : AF17      : output : 2.5 V             :         : 4         : N              
-ctrl_readRegA[0]             : AF18      : output : 2.5 V             :         : 4         : N              
-aluinput[5]                  : AF19      : output : 2.5 V             :         : 4         : N              
-data_writeReg[17]            : AF20      : output : 2.5 V             :         : 4         : N              
-data_reg_write[10]           : AF21      : output : 2.5 V             :         : 4         : N              
-aluinput[1]                  : AF22      : output : 2.5 V             :         : 4         : N              
+data_writeTwo[3]             : AF2       : output : 2.5 V             :         : 2         : N              
+data_reg_write[14]           : AF3       : output : 2.5 V             :         : 3         : N              
+sximmed[30]                  : AF4       : output : 2.5 V             :         : 3         : N              
+sximmed[27]                  : AF5       : output : 2.5 V             :         : 3         : N              
+sximmed[17]                  : AF6       : output : 2.5 V             :         : 3         : N              
+address_dmem[3]              : AF7       : output : 2.5 V             :         : 3         : N              
+data_reg_write[3]            : AF8       : output : 2.5 V             :         : 3         : N              
+data[30]                     : AF9       : output : 2.5 V             :         : 3         : N              
+data_reg_write[8]            : AF10      : output : 2.5 V             :         : 3         : N              
+address_imem[9]              : AF11      : output : 2.5 V             :         : 3         : N              
+aluinput[5]                  : AF12      : output : 2.5 V             :         : 3         : N              
+enableTwo                    : AF13      : output : 2.5 V             :         : 3         : N              
+alu_opcode[3]                : AF14      : output : 2.5 V             :         : 3         : N              
+data_readRegA[7]             : AF15      : output : 2.5 V             :         : 4         : N              
+data_readRegB[22]            : AF16      : output : 2.5 V             :         : 4         : N              
+data_reg_write[26]           : AF17      : output : 2.5 V             :         : 4         : N              
+data_writeReg[9]             : AF18      : output : 2.5 V             :         : 4         : N              
+data_writeReg[8]             : AF19      : output : 2.5 V             :         : 4         : N              
+data_writeReg[24]            : AF20      : output : 2.5 V             :         : 4         : N              
+data_writeReg[1]             : AF21      : output : 2.5 V             :         : 4         : N              
+data_reg_write[4]            : AF22      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF23      :        :                   :         : 4         :                
-q_imem[24]                   : AF24      : output : 2.5 V             :         : 4         : N              
-address_imem[0]              : AF25      : output : 2.5 V             :         : 4         : N              
-data[7]                      : AF26      : output : 2.5 V             :         : 4         : N              
-sximmed[17]                  : AF27      : output : 2.5 V             :         : 5         : N              
+data_writeReg[21]            : AF24      : output : 2.5 V             :         : 4         : N              
+data_writeReg[29]            : AF25      : output : 2.5 V             :         : 4         : N              
+aluinput[22]                 : AF26      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF27      :        :                   :         : 5         :                
 GND                          : AF28      : gnd    :                   :         :           :                
 VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
 GND                          : AG2       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   :         : 3         :                
-data_writeTwo[27]            : AG4       : output : 2.5 V             :         : 3         : N              
+data[18]                     : AG3       : output : 2.5 V             :         : 3         : N              
+data_readRegB[1]             : AG4       : output : 2.5 V             :         : 3         : N              
 GND                          : AG5       : gnd    :                   :         :           :                
-data[21]                     : AG6       : output : 2.5 V             :         : 3         : N              
-aluinput[23]                 : AG7       : output : 2.5 V             :         : 3         : N              
-address_dmem[4]              : AG8       : output : 2.5 V             :         : 3         : N              
+sximmed[6]                   : AG6       : output : 2.5 V             :         : 3         : N              
+aluinput[3]                  : AG7       : output : 2.5 V             :         : 3         : N              
+address_dmem[1]              : AG8       : output : 2.5 V             :         : 3         : N              
 GND                          : AG9       : gnd    :                   :         :           :                
-data_writeReg[14]            : AG10      : output : 2.5 V             :         : 3         : N              
-data_writeReg[12]            : AG11      : output : 2.5 V             :         : 3         : N              
-data_reg_write[24]           : AG12      : output : 2.5 V             :         : 3         : N              
+address_imem[5]              : AG10      : output : 2.5 V             :         : 3         : N              
+alu_opcode[0]                : AG11      : output : 2.5 V             :         : 3         : N              
+data_readRegA[29]            : AG12      : output : 2.5 V             :         : 3         : N              
 GND                          : AG13      : gnd    :                   :         :           :                
 GND+                         : AG14      :        :                   :         : 3         :                
 GND+                         : AG15      :        :                   :         : 4         :                
 GND                          : AG16      : gnd    :                   :         :           :                
-q_imem[15]                   : AG17      : output : 2.5 V             :         : 4         : N              
-data_writeReg[13]            : AG18      : output : 2.5 V             :         : 4         : N              
-data_writeReg[4]             : AG19      : output : 2.5 V             :         : 4         : N              
+data_reg_write[23]           : AG17      : output : 2.5 V             :         : 4         : N              
+data_readRegA[17]            : AG18      : output : 2.5 V             :         : 4         : N              
+aluinput[18]                 : AG19      : output : 2.5 V             :         : 4         : N              
 GND                          : AG20      : gnd    :                   :         :           :                
-address_imem[7]              : AG21      : output : 2.5 V             :         : 4         : N              
-data_reg_write[6]            : AG22      : output : 2.5 V             :         : 4         : N              
-data_readRegA[7]             : AG23      : output : 2.5 V             :         : 4         : N              
+aluinput[19]                 : AG21      : output : 2.5 V             :         : 4         : N              
+data_writeReg[11]            : AG22      : output : 2.5 V             :         : 4         : N              
+aluinput[21]                 : AG23      : output : 2.5 V             :         : 4         : N              
 GND                          : AG24      : gnd    :                   :         :           :                
-sximmed[13]                  : AG25      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4         :                
+data_reg_write[29]           : AG25      : output : 2.5 V             :         : 4         : N              
+q_imem[3]                    : AG26      : output : 2.5 V             :         : 4         : N              
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
 VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
-sximmed[28]                  : AH3       : output : 2.5 V             :         : 3         : N              
-data[0]                      : AH4       : output : 2.5 V             :         : 3         : N              
+sximmed[18]                  : AH3       : output : 2.5 V             :         : 3         : N              
+data[1]                      : AH4       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
-data_readRegB[28]            : AH6       : output : 2.5 V             :         : 3         : N              
-q_imem[1]                    : AH7       : output : 2.5 V             :         : 3         : N              
-data_readRegB[21]            : AH8       : output : 2.5 V             :         : 3         : N              
+q_dmem[29]                   : AH6       : output : 2.5 V             :         : 3         : N              
+q_dmem[14]                   : AH7       : output : 2.5 V             :         : 3         : N              
+data_readRegB[30]            : AH8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
-data_writeReg[24]            : AH10      : output : 2.5 V             :         : 3         : N              
-data_writeReg[23]            : AH11      : output : 2.5 V             :         : 3         : N              
-alu_opcode[3]                : AH12      : output : 2.5 V             :         : 3         : N              
+aluinput[31]                 : AH10      : output : 2.5 V             :         : 3         : N              
+sximmed[11]                  : AH11      : output : 2.5 V             :         : 3         : N              
+data_readRegA[27]            : AH12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
 GND+                         : AH14      :        :                   :         : 3         :                
 GND+                         : AH15      :        :                   :         : 4         :                
 VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
-q_imem[31]                   : AH17      : output : 2.5 V             :         : 4         : N              
-data_writeReg[10]            : AH18      : output : 2.5 V             :         : 4         : N              
-data_writeReg[0]             : AH19      : output : 2.5 V             :         : 4         : N              
+data_reg_write[25]           : AH17      : output : 2.5 V             :         : 4         : N              
+data_readRegA[22]            : AH18      : output : 2.5 V             :         : 4         : N              
+q_dmem[3]                    : AH19      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
-data_writeReg[3]             : AH21      : output : 2.5 V             :         : 4         : N              
-address_dmem[6]              : AH22      : output : 2.5 V             :         : 4         : N              
-data_writeReg[1]             : AH23      : output : 2.5 V             :         : 4         : N              
+data_readRegA[31]            : AH21      : output : 2.5 V             :         : 4         : N              
+data_writeReg[2]             : AH22      : output : 2.5 V             :         : 4         : N              
+data_writeReg[23]            : AH23      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
-q_imem[13]                   : AH25      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 4         :                
+address_dmem[10]             : AH25      : output : 2.5 V             :         : 4         : N              
+sximmed[3]                   : AH26      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
 VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
-sximmed[16]                  : B4        : output : 2.5 V             :         : 8         : N              
+sximmed[31]                  : B4        : output : 2.5 V             :         : 8         : N              
 GND                          : B5        : gnd    :                   :         :           :                
-data[12]                     : B6        : output : 2.5 V             :         : 8         : N              
-data_readRegB[24]            : B7        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : B8        :        :                   :         : 8         :                
+data[9]                      : B6        : output : 2.5 V             :         : 8         : N              
+data_reg_write[6]            : B7        : output : 2.5 V             :         : 8         : N              
+data[23]                     : B8        : output : 2.5 V             :         : 8         : N              
 GND                          : B9        : gnd    :                   :         :           :                
-data_readRegA[9]             : B10       : output : 2.5 V             :         : 8         : N              
-ctrl_writeReg[1]             : B11       : output : 2.5 V             :         : 8         : N              
+sximmed[10]                  : B10       : output : 2.5 V             :         : 8         : N              
+sximmed[5]                   : B11       : output : 2.5 V             :         : 8         : N              
 GND                          : B12       : gnd    :                   :         :           :                
 GND                          : B13       : gnd    :                   :         :           :                
 GND+                         : B14       :        :                   :         : 8         :                
 GND+                         : B15       :        :                   :         : 7         :                
 GND                          : B16       : gnd    :                   :         :           :                
-alu_opcode[2]                : B17       : output : 2.5 V             :         : 7         : N              
-sximmed[7]                   : B18       : output : 2.5 V             :         : 7         : N              
-data_writeReg[19]            : B19       : output : 2.5 V             :         : 7         : N              
+ctrl_writeReg[2]             : B17       : output : 2.5 V             :         : 7         : N              
+data_writeReg[16]            : B18       : output : 2.5 V             :         : 7         : N              
+data_writeReg[5]             : B19       : output : 2.5 V             :         : 7         : N              
 GND                          : B20       : gnd    :                   :         :           :                
-aluinput[16]                 : B21       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : B22       :        :                   :         : 7         :                
-data_writeTwo[13]            : B23       : output : 2.5 V             :         : 7         : N              
+q_imem[13]                   : B21       : output : 2.5 V             :         : 7         : N              
+data_writeTwo[16]            : B22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B23       :        :                   :         : 7         :                
 GND                          : B24       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B25       :        :                   :         : 7         :                
-sximmed[31]                  : B26       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B26       :        :                   :         : 7         :                
 GND                          : B27       : gnd    :                   :         :           :                
 VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
 GND                          : C1        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
+sximmed[21]                  : C2        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
-sximmed[21]                  : C4        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
+q_imem[16]                   : C4        : output : 2.5 V             :         : 8         : N              
+sximmed[23]                  : C5        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
-sximmed[6]                   : C9        : output : 2.5 V             :         : 8         : N              
-address_dmem[8]              : C10       : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C11       :        :                   :         : 8         :                
-q_dmem[31]                   : C12       : output : 2.5 V             :         : 8         : N              
-q_dmem[8]                    : C13       : output : 2.5 V             :         : 8         : N              
-q_dmem[6]                    : C14       : output : 2.5 V             :         : 8         : N              
-data_reg_write[18]           : C15       : output : 2.5 V             :         : 7         : N              
-sximmed[10]                  : C16       : output : 2.5 V             :         : 7         : N              
-data_readRegA[26]            : C17       : output : 2.5 V             :         : 7         : N              
-data_readRegB[13]            : C18       : output : 2.5 V             :         : 7         : N              
-data_reg_write[3]            : C19       : output : 2.5 V             :         : 7         : N              
-data_readRegB[10]            : C20       : output : 2.5 V             :         : 7         : N              
+data_readRegB[4]             : C7        : output : 2.5 V             :         : 8         : N              
+data_readRegB[23]            : C8        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 8         :                
+q_dmem[15]                   : C10       : output : 2.5 V             :         : 8         : N              
+sximmed[22]                  : C11       : output : 2.5 V             :         : 8         : N              
+data_readRegB[2]             : C12       : output : 2.5 V             :         : 8         : N              
+aluinput[10]                 : C13       : output : 2.5 V             :         : 8         : N              
+q_dmem[9]                    : C14       : output : 2.5 V             :         : 8         : N              
+processor_clock              : C15       : output : 2.5 V             :         : 7         : N              
+q_imem[14]                   : C16       : output : 2.5 V             :         : 7         : N              
+data_readRegB[15]            : C17       : output : 2.5 V             :         : 7         : N              
+data[29]                     : C18       : output : 2.5 V             :         : 7         : N              
+q_dmem[4]                    : C19       : output : 2.5 V             :         : 7         : N              
+aluinput[15]                 : C20       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C21       :        :                   :         : 7         :                
-data_writeTwo[11]            : C22       : output : 2.5 V             :         : 7         : N              
-data_writeTwo[8]             : C23       : output : 2.5 V             :         : 7         : N              
-data[4]                      : C24       : output : 2.5 V             :         : 7         : N              
+data_writeTwo[21]            : C22       : output : 2.5 V             :         : 7         : N              
+data_writeTwo[7]             : C23       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C24       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C25       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 7         :                
-sximmed[26]                  : C27       : output : 2.5 V             :         : 6         : N              
+data_writeTwo[19]            : C27       : output : 2.5 V             :         : 6         : N              
 GND                          : C28       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
 GND                          : D3        : gnd    :                   :         :           :                
-data_writeTwo[10]            : D4        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
-data[27]                     : D6        : output : 2.5 V             :         : 8         : N              
-data[30]                     : D7        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D4        :        :                   :         : 8         :                
+data_writeTwo[28]            : D5        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
+data[4]                      : D7        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
-aluinput[27]                 : D10       : output : 2.5 V             :         : 8         : N              
-q_imem[6]                    : D11       : output : 2.5 V             :         : 8         : N              
-data_reg_write[31]           : D12       : output : 2.5 V             :         : 8         : N              
-q_dmem[30]                   : D13       : output : 2.5 V             :         : 8         : N              
-q_dmem[22]                   : D14       : output : 2.5 V             :         : 8         : N              
-data_reg_write[20]           : D15       : output : 2.5 V             :         : 7         : N              
-q_imem[10]                   : D16       : output : 2.5 V             :         : 7         : N              
-q_dmem[21]                   : D17       : output : 2.5 V             :         : 7         : N              
-data[10]                     : D18       : output : 2.5 V             :         : 7         : N              
-data_reg_write[1]            : D19       : output : 2.5 V             :         : 7         : N              
-q_imem[14]                   : D20       : output : 2.5 V             :         : 7         : N              
-data_writeTwo[21]            : D21       : output : 2.5 V             :         : 7         : N              
-data[2]                      : D22       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D23       :        :                   :         : 7         :                
+address_dmem[6]              : D10       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 8         :                
+aluinput[6]                  : D12       : output : 2.5 V             :         : 8         : N              
+q_imem[10]                   : D13       : output : 2.5 V             :         : 8         : N              
+data[2]                      : D14       : output : 2.5 V             :         : 8         : N              
+regfile_clock                : D15       : output : 2.5 V             :         : 7         : N              
+sximmed[14]                  : D16       : output : 2.5 V             :         : 7         : N              
+data_readRegB[10]            : D17       : output : 2.5 V             :         : 7         : N              
+aluinput[29]                 : D18       : output : 2.5 V             :         : 7         : N              
+data_writeReg[4]             : D19       : output : 2.5 V             :         : 7         : N              
+sximmed[13]                  : D20       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D21       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D22       :        :                   :         : 7         :                
+data_writeTwo[24]            : D23       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D24       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D25       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 6         :                
-data_writeTwo[19]            : D27       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D28       :        :                   :         : 6         :                
-data_writeTwo[4]             : E1        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E1        :        :                   :         : 1         :                
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 1         :                
-data_writeTwo[9]             : E4        : output : 2.5 V             :         : 8         : N              
-sximmed[19]                  : E5        : output : 2.5 V             :         : 8         : N              
+sximmed[24]                  : E3        : output : 2.5 V             :         : 1         : N              
+sximmed[25]                  : E4        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E5        :        :                   :         : 8         :                
 VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E7        :        :                   :         : 8         :                
-data[15]                     : E8        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E8        :        :                   :         : 8         :                
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
-data_readRegB[30]            : E10       : output : 2.5 V             :         : 8         : N              
-data_reg_write[28]           : E11       : output : 2.5 V             :         : 8         : N              
-aluinput[6]                  : E12       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 8         :                
+data_readRegB[19]            : E11       : output : 2.5 V             :         : 8         : N              
+data[7]                      : E12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
-q_dmem[3]                    : E14       : output : 2.5 V             :         : 8         : N              
-alu_opcode[1]                : E15       : output : 2.5 V             :         : 7         : N              
+sximmed[0]                   : E14       : output : 2.5 V             :         : 8         : N              
+ctrl_readRegB[3]             : E15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
-data_readRegA[22]            : E17       : output : 2.5 V             :         : 7         : N              
-address_dmem[3]              : E18       : output : 2.5 V             :         : 7         : N              
-data_readRegB[4]             : E19       : output : 2.5 V             :         : 7         : N              
+data_readRegB[29]            : E17       : output : 2.5 V             :         : 7         : N              
+ctrl_readRegA[2]             : E18       : output : 2.5 V             :         : 7         : N              
+data_readRegB[17]            : E19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
-data_writeTwo[25]            : E21       : output : 2.5 V             :         : 7         : N              
-data_readRegB[2]             : E22       : output : 2.5 V             :         : 7         : N              
+data_writeTwo[20]            : E21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E22       :        :                   :         : 7         :                
 VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
-sximmed[14]                  : E24       : output : 2.5 V             :         : 7         : N              
-aluinput[0]                  : E25       : output : 2.5 V             :         : 7         : N              
-data_writeTwo[31]            : E26       : output : 2.5 V             :         : 6         : N              
+data_writeReg[18]            : E24       : output : 2.5 V             :         : 7         : N              
+ctrl_readRegA[1]             : E25       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E26       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E28       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F1        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F2        :        :                   :         : 1         :                
+data_writeTwo[31]            : F2        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F3        :        :                   :         : 1         :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 1         :                
 GND                          : F6        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :         : 8         :                
-data_readRegB[15]            : F8        : output : 2.5 V             :         : 8         : N              
+data_writeTwo[27]            : F7        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
 GND                          : F9        : gnd    :                   :         :           :                
-q_dmem[28]                   : F10       : output : 2.5 V             :         : 8         : N              
-q_dmem[25]                   : F11       : output : 2.5 V             :         : 8         : N              
-data_reg_write[8]            : F12       : output : 2.5 V             :         : 8         : N              
+data[26]                     : F10       : output : 2.5 V             :         : 8         : N              
+data[19]                     : F11       : output : 2.5 V             :         : 8         : N              
+data_readRegB[7]             : F12       : output : 2.5 V             :         : 8         : N              
 GND                          : F13       : gnd    :                   :         :           :                
-q_dmem[23]                   : F14       : output : 2.5 V             :         : 8         : N              
-data_readRegA[30]            : F15       : output : 2.5 V             :         : 7         : N              
+q_imem[0]                    : F14       : output : 2.5 V             :         : 8         : N              
+q_imem[27]                   : F15       : output : 2.5 V             :         : 7         : N              
 GND                          : F16       : gnd    :                   :         :           :                
-ctrl_readRegA[4]             : F17       : output : 2.5 V             :         : 7         : N              
-data[13]                     : F18       : output : 2.5 V             :         : 7         : N              
+data_reg_write[22]           : F17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F19       :        :                   :         : 7         :                
 GND                          : F20       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F21       :        :                   :         : 7         :                
-data_writeTwo[7]             : F22       : output : 2.5 V             :         : 7         : N              
+data_writeTwo[6]             : F22       : output : 2.5 V             :         : 7         : N              
 GND                          : F23       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F24       :        :                   :         : 6         :                
+data_writeTwo[26]            : F24       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F25       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F26       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F27       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F28       :        :                   :         : 6         :                
+sximmed[15]                  : F27       : output : 2.5 V             :         : 6         : N              
+q_imem[15]                   : F28       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G1        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G2        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G3        :        :                   :         : 1         :                
-data_writeTwo[28]            : G4        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G4        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8         :                
-data_readRegB[1]             : G8        : output : 2.5 V             :         : 8         : N              
-data_readRegB[27]            : G9        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 8         :                
-data_writeTwo[3]             : G11       : output : 2.5 V             :         : 8         : N              
-data_readRegB[31]            : G12       : output : 2.5 V             :         : 8         : N              
-ctrl_writeReg[4]             : G13       : output : 2.5 V             :         : 8         : N              
-q_dmem[2]                    : G14       : output : 2.5 V             :         : 8         : N              
-q_imem[7]                    : G15       : output : 2.5 V             :         : 7         : N              
-address_dmem[5]              : G16       : output : 2.5 V             :         : 7         : N              
-address_dmem[1]              : G17       : output : 2.5 V             :         : 7         : N              
-data_readRegA[31]            : G18       : output : 2.5 V             :         : 7         : N              
-data_readRegA[23]            : G19       : output : 2.5 V             :         : 7         : N              
-address_imem[11]             : G20       : output : 2.5 V             :         : 7         : N              
-data_reg_write[5]            : G21       : output : 2.5 V             :         : 7         : N              
-data_readRegA[17]            : G22       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 6         :                
-data_writeTwo[6]             : G24       : output : 2.5 V             :         : 6         : N              
+data_writeTwo[30]            : G7        : output : 2.5 V             :         : 8         : N              
+data_writeTwo[18]            : G8        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G9        :        :                   :         : 8         :                
+data_readRegB[26]            : G10       : output : 2.5 V             :         : 8         : N              
+q_imem[29]                   : G11       : output : 2.5 V             :         : 8         : N              
+data_readRegB[27]            : G12       : output : 2.5 V             :         : 8         : N              
+q_imem[4]                    : G13       : output : 2.5 V             :         : 8         : N              
+data_readRegA[2]             : G14       : output : 2.5 V             :         : 8         : N              
+q_imem[28]                   : G15       : output : 2.5 V             :         : 7         : N              
+data[15]                     : G16       : output : 2.5 V             :         : 7         : N              
+q_imem[22]                   : G17       : output : 2.5 V             :         : 7         : N              
+data_readRegB[13]            : G18       : output : 2.5 V             :         : 7         : N              
+data[13]                     : G19       : output : 2.5 V             :         : 7         : N              
+q_imem[18]                   : G20       : output : 2.5 V             :         : 7         : N              
+q_imem[20]                   : G21       : output : 2.5 V             :         : 7         : N              
+data_writeReg[15]            : G22       : output : 2.5 V             :         : 7         : N              
+data_writeTwo[8]             : G23       : output : 2.5 V             :         : 6         : N              
+data_writeTwo[25]            : G24       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G25       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G27       :        :                   :         : 6         :                
-q_dmem[16]                   : G28       : output : 2.5 V             :         : 6         : N              
+q_dmem[24]                   : G27       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G28       :        :                   :         : 6         :                
 VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
 GND                          : H2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 1         :                
-sximmed[25]                  : H4        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : H5        :        :                   :         : 1         :                
+data_writeTwo[4]             : H4        : output : 2.5 V             :         : 1         : N              
+data_writeTwo[23]            : H5        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H6        :        :                   :         : 1         :                
-data_writeTwo[18]            : H7        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 8         :                
 GNDA3                        : H9        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H10       :        :                   :         : 8         :                
+data_readRegB[28]            : H10       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
-data[24]                     : H12       : output : 2.5 V             :         : 8         : N              
-data_readRegA[3]             : H13       : output : 2.5 V             :         : 8         : N              
-q_dmem[9]                    : H14       : output : 2.5 V             :         : 8         : N              
-data_readRegA[8]             : H15       : output : 2.5 V             :         : 7         : N              
-data_reg_write[30]           : H16       : output : 2.5 V             :         : 7         : N              
-aluinput[30]                 : H17       : output : 2.5 V             :         : 7         : N              
+data_readRegB[9]             : H12       : output : 2.5 V             :         : 8         : N              
+sximmed[4]                   : H13       : output : 2.5 V             :         : 8         : N              
+data_readRegA[1]             : H14       : output : 2.5 V             :         : 8         : N              
+address_dmem[11]             : H15       : output : 2.5 V             :         : 7         : N              
+q_imem[31]                   : H16       : output : 2.5 V             :         : 7         : N              
+q_dmem[17]                   : H17       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
-data_readRegA[0]             : H19       : output : 2.5 V             :         : 7         : N              
+q_imem[24]                   : H19       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : H20       : gnd    :                   :         :           :                
-data_readRegA[21]            : H21       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : H22       :        :                   :         : 6         :                
+data_readRegB[8]             : H21       : output : 2.5 V             :         : 7         : N              
+data_writeTwo[5]             : H22       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H23       :        :                   :         : 6         :                
-data_writeTwo[23]            : H24       : output : 2.5 V             :         : 6         : N              
-data_readRegB[20]            : H25       : output : 2.5 V             :         : 6         : N              
+data_writeTwo[22]            : H24       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H25       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H26       :        :                   :         : 6         :                
 GND                          : H27       : gnd    :                   :         :           :                
 VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
@@ -517,38 +517,38 @@ clock                        : J1        : input  : 2.5 V             :         
 GND                          : J2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J3        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J4        :        :                   :         : 1         :                
-data_readRegA[20]            : J5        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J5        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J6        :        :                   :         : 1         :                
-aluinput[3]                  : J7        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J7        :        :                   :         : 1         :                
 VCCA3                        : J8        : power  :                   : 2.5V    :           :                
 VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J10       :        :                   :         : 8         :                
+data[28]                     : J10       : output : 2.5 V             :         : 8         : N              
 GND                          : J11       : gnd    :                   :         :           :                
-data_readRegA[1]             : J12       : output : 2.5 V             :         : 8         : N              
-data_readRegA[14]            : J13       : output : 2.5 V             :         : 8         : N              
-overflow                     : J14       : output : 2.5 V             :         : 8         : N              
-data_reg_write[19]           : J15       : output : 2.5 V             :         : 7         : N              
-data_reg_write[21]           : J16       : output : 2.5 V             :         : 7         : N              
-data_readRegA[25]            : J17       : output : 2.5 V             :         : 7         : N              
+sximmed[7]                   : J12       : output : 2.5 V             :         : 8         : N              
+q_imem[7]                    : J13       : output : 2.5 V             :         : 8         : N              
+data_readRegA[3]             : J14       : output : 2.5 V             :         : 8         : N              
+data_reg_write[30]           : J15       : output : 2.5 V             :         : 7         : N              
+overflow                     : J16       : output : 2.5 V             :         : 7         : N              
+data[8]                      : J17       : output : 2.5 V             :         : 7         : N              
 GND                          : J18       : gnd    :                   :         :           :                
-alu_opcode[0]                : J19       : output : 2.5 V             :         : 7         : N              
+data[17]                     : J19       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
 VCCA2                        : J21       : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J22       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J23       :        :                   :         : 6         :                
-data_writeTwo[16]            : J24       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J24       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J25       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J26       :        :                   :         : 6         :                
 GND+                         : J27       :        :                   :         : 6         :                
 GND+                         : J28       :        :                   :         : 6         :                
-data[26]                     : K1        : output : 2.5 V             :         : 1         : N              
+data_writeTwo[10]            : K1        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : K2        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K3        :        :                   :         : 1         :                
+data_writeTwo[2]             : K3        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : K4        :        :                   :         : 1         :                
 VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
 GND                          : K6        : gnd    :                   :         :           :                
-data_readRegA[6]             : K7        : output : 2.5 V             :         : 1         : N              
-data_readRegA[2]             : K8        : output : 2.5 V             :         : 1         : N              
+data[25]                     : K7        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K8        :        :                   :         : 1         :                
 VCCINT                       : K9        : power  :                   : 1.2V    :           :                
 GND                          : K10       : gnd    :                   :         :           :                
 VCCINT                       : K11       : power  :                   : 1.2V    :           :                
@@ -561,22 +561,22 @@ VCCINT                       : K17       : power  :                   : 1.2V    
 GND                          : K18       : gnd    :                   :         :           :                
 VCCINT                       : K19       : power  :                   : 1.2V    :           :                
 GND                          : K20       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K21       :        :                   :         : 6         :                
+data_writeTwo[9]             : K21       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : K22       :        :                   :         : 6         :                
 GND                          : K23       : gnd    :                   :         :           :                
 VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K25       :        :                   :         : 6         :                
-data[20]                     : K26       : output : 2.5 V             :         : 6         : N              
-data_writeTwo[17]            : K27       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : K28       :        :                   :         : 6         :                
-data_readRegA[27]            : L1        : output : 2.5 V             :         : 1         : N              
-regfile_clock                : L2        : output : 2.5 V             :         : 1         : N              
-data[19]                     : L3        : output : 2.5 V             :         : 1         : N              
-data_readRegB[19]            : L4        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K27       :        :                   :         : 6         :                
+data_reg_write[20]           : K28       : output : 2.5 V             :         : 6         : N              
+ctrl_readRegB[1]             : L1        : output : 2.5 V             :         : 1         : N              
+q_dmem[30]                   : L2        : output : 2.5 V             :         : 1         : N              
+data_readRegB[25]            : L3        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L5        :        :                   :         : 1         :                
-data_reg_write[7]            : L6        : output : 2.5 V             :         : 1         : N              
-data_readRegA[12]            : L7        : output : 2.5 V             :         : 1         : N              
-aluinput[22]                 : L8        : output : 2.5 V             :         : 1         : N              
+dmem_clock                   : L6        : output : 2.5 V             :         : 1         : N              
+imem_clock                   : L7        : output : 2.5 V             :         : 1         : N              
+data_readRegA[10]            : L8        : output : 2.5 V             :         : 1         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 VCCINT                       : L10       : power  :                   : 1.2V    :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -589,22 +589,22 @@ GND                          : L17       : gnd    :                   :         
 VCCINT                       : L18       : power  :                   : 1.2V    :           :                
 GND                          : L19       : gnd    :                   :         :           :                
 VCCINT                       : L20       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L21       :        :                   :         : 6         :                
+data_writeTwo[29]            : L21       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L22       :        :                   :         : 6         :                
-sximmed[11]                  : L23       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : L24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L23       :        :                   :         : 6         :                
+data_readRegB[6]             : L24       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L25       :        :                   :         : 6         :                
-q_imem[9]                    : L26       : output : 2.5 V             :         : 6         : N              
-sximmed[9]                   : L27       : output : 2.5 V             :         : 6         : N              
-data_readRegA[4]             : L28       : output : 2.5 V             :         : 6         : N              
-processor_clock              : M1        : output : 2.5 V             :         : 1         : N              
-aluinput[12]                 : M2        : output : 2.5 V             :         : 1         : N              
-aluinput[2]                  : M3        : output : 2.5 V             :         : 1         : N              
-data_readRegB[26]            : M4        : output : 2.5 V             :         : 1         : N              
-sximmed[8]                   : M5        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L26       :        :                   :         : 6         :                
+data[20]                     : L27       : output : 2.5 V             :         : 6         : N              
+data_readRegB[20]            : L28       : output : 2.5 V             :         : 6         : N              
+ctrl_writeReg[1]             : M1        : output : 2.5 V             :         : 1         : N              
+data_writeTwo[1]             : M2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M3        :        :                   :         : 1         :                
+sximmed[28]                  : M4        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M5        :        :                   :         : 1         :                
 nSTATUS                      : M6        :        :                   :         : 1         :                
-aluinput[25]                 : M7        : output : 2.5 V             :         : 1         : N              
-data_writeReg[9]             : M8        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M7        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M8        :        :                   :         : 1         :                
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
 GND                          : M10       : gnd    :                   :         :           :                
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
@@ -619,20 +619,20 @@ VCCINT                       : M19       : power  :                   : 1.2V    
 GND                          : M20       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M21       :        :                   :         : 6         :                
 MSEL2                        : M22       :        :                   :         : 6         :                
-aluinput[10]                 : M23       : output : 2.5 V             :         : 6         : N              
-data[9]                      : M24       : output : 2.5 V             :         : 6         : N              
-data_readRegA[28]            : M25       : output : 2.5 V             :         : 6         : N              
-data_reg_write[0]            : M26       : output : 2.5 V             :         : 6         : N              
-data_readRegA[15]            : M27       : output : 2.5 V             :         : 6         : N              
-address_dmem[9]              : M28       : output : 2.5 V             :         : 6         : N              
+q_imem[26]                   : M23       : output : 2.5 V             :         : 6         : N              
+data_writeReg[20]            : M24       : output : 2.5 V             :         : 6         : N              
+data_reg_write[5]            : M25       : output : 2.5 V             :         : 6         : N              
+q_imem[30]                   : M26       : output : 2.5 V             :         : 6         : N              
+data_writeReg[3]             : M27       : output : 2.5 V             :         : 6         : N              
+ctrl_writeReg[4]             : M28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
 GND                          : N2        : gnd    :                   :         :           :                
-data_readRegA[11]            : N3        : output : 2.5 V             :         : 1         : N              
-wren                         : N4        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N4        :        :                   :         : 1         :                
 VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
 GND                          : N6        : gnd    :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
-sximmed[3]                   : N8        : output : 2.5 V             :         : 1         : N              
+data_readRegB[0]             : N8        : output : 2.5 V             :         : 1         : N              
 GND                          : N9        : gnd    :                   :         :           :                
 VCCINT                       : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
@@ -645,16 +645,16 @@ GND                          : N17       : gnd    :                   :         
 VCCINT                       : N18       : power  :                   : 1.2V    :           :                
 GND                          : N19       : gnd    :                   :         :           :                
 VCCINT                       : N20       : power  :                   : 1.2V    :           :                
-aluinput[21]                 : N21       : output : 2.5 V             :         : 6         : N              
+data_writeTwo[0]             : N21       : output : 2.5 V             :         : 6         : N              
 MSEL0                        : N22       :        :                   :         : 6         :                
 GND                          : N23       : gnd    :                   :         :           :                
 VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
-data_reg_write[9]            : N25       : output : 2.5 V             :         : 6         : N              
-sximmed[4]                   : N26       : output : 2.5 V             :         : 6         : N              
+data_writeReg[0]             : N25       : output : 2.5 V             :         : 6         : N              
+ctrl_readRegB[2]             : N26       : output : 2.5 V             :         : 6         : N              
 GND                          : N27       : gnd    :                   :         :           :                
 VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
-data_reg_write[12]           : P1        : output : 2.5 V             :         : 1         : N              
-ctrl_writeReg[0]             : P2        : output : 2.5 V             :         : 1         : N              
+data[0]                      : P1        : output : 2.5 V             :         : 1         : N              
+data_reg_write[17]           : P2        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
 nCONFIG                      : P4        :        :                   :         : 1         :                
 TCK                          : P5        : input  :                   :         : 1         :                
@@ -673,21 +673,21 @@ VCCINT                       : P17       : power  :                   : 1.2V    
 GND                          : P18       : gnd    :                   :         :           :                
 VCCINT                       : P19       : power  :                   : 1.2V    :           :                
 GND                          : P20       : gnd    :                   :         :           :                
-address_dmem[2]              : P21       : output : 2.5 V             :         : 5         : N              
+data_readRegB[16]            : P21       : output : 2.5 V             :         : 5         : N              
 MSEL3                        : P22       :        :                   :         : 6         :                
 MSEL1                        : P23       :        :                   :         : 6         :                
 CONF_DONE                    : P24       :        :                   :         : 6         :                
-data_readRegB[9]             : P25       : output : 2.5 V             :         : 6         : N              
-q_dmem[19]                   : P26       : output : 2.5 V             :         : 6         : N              
-q_imem[4]                    : P27       : output : 2.5 V             :         : 6         : N              
+ctrl_readRegA[0]             : P25       : output : 2.5 V             :         : 6         : N              
+data[31]                     : P26       : output : 2.5 V             :         : 6         : N              
+data_writeReg[7]             : P27       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
-imem_clock                   : R1        : output : 2.5 V             :         : 2         : N              
-dmem_clock                   : R2        : output : 2.5 V             :         : 2         : N              
-q_dmem[13]                   : R3        : output : 2.5 V             :         : 2         : N              
-data_reg_write[15]           : R4        : output : 2.5 V             :         : 2         : N              
-q_dmem[29]                   : R5        : output : 2.5 V             :         : 2         : N              
-aluinput[31]                 : R6        : output : 2.5 V             :         : 2         : N              
-q_dmem[12]                   : R7        : output : 2.5 V             :         : 2         : N              
+q_imem[1]                    : R1        : output : 2.5 V             :         : 2         : N              
+sximmed[1]                   : R2        : output : 2.5 V             :         : 2         : N              
+data_readRegA[12]            : R3        : output : 2.5 V             :         : 2         : N              
+address_imem[6]              : R4        : output : 2.5 V             :         : 2         : N              
+data_reg_write[2]            : R5        : output : 2.5 V             :         : 2         : N              
+wren                         : R6        : output : 2.5 V             :         : 2         : N              
+q_dmem[1]                    : R7        : output : 2.5 V             :         : 2         : N              
 nCE                          : R8        :        :                   :         : 1         :                
 GND                          : R9        : gnd    :                   :         :           :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
@@ -701,22 +701,22 @@ GND                          : R17       : gnd    :                   :         
 VCCINT                       : R18       : power  :                   : 1.2V    :           :                
 GND                          : R19       : gnd    :                   :         :           :                
 VCCINT                       : R20       : power  :                   : 1.2V    :           :                
-data_reg_write[2]            : R21       : output : 2.5 V             :         : 5         : N              
-q_dmem[20]                   : R22       : output : 2.5 V             :         : 5         : N              
-data_reg_write[25]           : R23       : output : 2.5 V             :         : 5         : N              
-data_readRegA[19]            : R24       : output : 2.5 V             :         : 5         : N              
-data_reg_write[17]           : R25       : output : 2.5 V             :         : 5         : N              
-aluinput[20]                 : R26       : output : 2.5 V             :         : 5         : N              
-data_reg_write[23]           : R27       : output : 2.5 V             :         : 5         : N              
-data_readRegA[10]            : R28       : output : 2.5 V             :         : 5         : N              
+data[6]                      : R21       : output : 2.5 V             :         : 5         : N              
+data_writeReg[22]            : R22       : output : 2.5 V             :         : 5         : N              
+data_readRegB[5]             : R23       : output : 2.5 V             :         : 5         : N              
+data[5]                      : R24       : output : 2.5 V             :         : 5         : N              
+data_readRegB[31]            : R25       : output : 2.5 V             :         : 5         : N              
+data[16]                     : R26       : output : 2.5 V             :         : 5         : N              
+data_readRegB[3]             : R27       : output : 2.5 V             :         : 5         : N              
+data[3]                      : R28       : output : 2.5 V             :         : 5         : N              
 VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
 GND                          : T2        : gnd    :                   :         :           :                
-aluinput[11]                 : T3        : output : 2.5 V             :         : 2         : N              
-data_reg_write[13]           : T4        : output : 2.5 V             :         : 2         : N              
+address_dmem[2]              : T3        : output : 2.5 V             :         : 2         : N              
+address_imem[2]              : T4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
 GND                          : T6        : gnd    :                   :         :           :                
-ctrl_writeReg[3]             : T7        : output : 2.5 V             :         : 2         : N              
-data_writeTwo[24]            : T8        : output : 2.5 V             :         : 2         : N              
+data_readRegA[0]             : T7        : output : 2.5 V             :         : 2         : N              
+data_reg_write[18]           : T8        : output : 2.5 V             :         : 2         : N              
 VCCINT                       : T9        : power  :                   : 1.2V    :           :                
 GND                          : T10       : gnd    :                   :         :           :                
 VCCINT                       : T11       : power  :                   : 1.2V    :           :                
@@ -729,22 +729,22 @@ VCCINT                       : T17       : power  :                   : 1.2V    
 GND                          : T18       : gnd    :                   :         :           :                
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
-aluinput[28]                 : T21       : output : 2.5 V             :         : 5         : N              
-q_imem[22]                   : T22       : output : 2.5 V             :         : 5         : N              
+q_imem[25]                   : T21       : output : 2.5 V             :         : 5         : N              
+aluinput[13]                 : T22       : output : 2.5 V             :         : 5         : N              
 GND                          : T23       : gnd    :                   :         :           :                
 VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
-data_readRegA[29]            : T25       : output : 2.5 V             :         : 5         : N              
-data_readRegA[18]            : T26       : output : 2.5 V             :         : 5         : N              
+ctrl_readRegA[4]             : T25       : output : 2.5 V             :         : 5         : N              
+ctrl_readRegA[3]             : T26       : output : 2.5 V             :         : 5         : N              
 GND                          : T27       : gnd    :                   :         :           :                
 VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
-q_dmem[27]                   : U1        : output : 2.5 V             :         : 2         : N              
-q_dmem[15]                   : U2        : output : 2.5 V             :         : 2         : N              
-data_reg_write[22]           : U3        : output : 2.5 V             :         : 2         : N              
-aluinput[15]                 : U4        : output : 2.5 V             :         : 2         : N              
-data_readRegB[16]            : U5        : output : 2.5 V             :         : 2         : N              
-data_writeReg[31]            : U6        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 2         :                
-data_writeTwo[5]             : U8        : output : 2.5 V             :         : 2         : N              
+q_dmem[21]                   : U1        : output : 2.5 V             :         : 2         : N              
+alu_opcode[4]                : U2        : output : 2.5 V             :         : 2         : N              
+data_readRegA[4]             : U3        : output : 2.5 V             :         : 2         : N              
+data_readRegA[8]             : U4        : output : 2.5 V             :         : 2         : N              
+sximmed[8]                   : U5        : output : 2.5 V             :         : 2         : N              
+q_dmem[12]                   : U6        : output : 2.5 V             :         : 2         : N              
+address_imem[7]              : U7        : output : 2.5 V             :         : 2         : N              
+address_imem[3]              : U8        : output : 2.5 V             :         : 2         : N              
 GND                          : U9        : gnd    :                   :         :           :                
 VCCINT                       : U10       : power  :                   : 1.2V    :           :                
 GND                          : U11       : gnd    :                   :         :           :                
@@ -757,22 +757,22 @@ GND                          : U17       : gnd    :                   :         
 VCCINT                       : U18       : power  :                   : 1.2V    :           :                
 GND                          : U19       : gnd    :                   :         :           :                
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
-data_writeReg[21]            : U21       : output : 2.5 V             :         : 5         : N              
-address_imem[4]              : U22       : output : 2.5 V             :         : 5         : N              
-ctrl_readRegB[4]             : U23       : output : 2.5 V             :         : 5         : N              
-ctrl_readRegA[1]             : U24       : output : 2.5 V             :         : 5         : N              
-q_imem[19]                   : U25       : output : 2.5 V             :         : 5         : N              
-ctrl_readRegA[2]             : U26       : output : 2.5 V             :         : 5         : N              
-data_reg_write[16]           : U27       : output : 2.5 V             :         : 5         : N              
-q_imem[18]                   : U28       : output : 2.5 V             :         : 5         : N              
-q_dmem[10]                   : V1        : output : 2.5 V             :         : 2         : N              
-address_dmem[7]              : V2        : output : 2.5 V             :         : 2         : N              
-q_imem[8]                    : V3        : output : 2.5 V             :         : 2         : N              
-q_dmem[14]                   : V4        : output : 2.5 V             :         : 2         : N              
+q_imem[12]                   : U21       : output : 2.5 V             :         : 5         : N              
+data_readRegB[11]            : U22       : output : 2.5 V             :         : 5         : N              
+q_dmem[23]                   : U23       : output : 2.5 V             :         : 5         : N              
+data_writeReg[17]            : U24       : output : 2.5 V             :         : 5         : N              
+data_reg_write[27]           : U25       : output : 2.5 V             :         : 5         : N              
+data_reg_write[28]           : U26       : output : 2.5 V             :         : 5         : N              
+sximmed[12]                  : U27       : output : 2.5 V             :         : 5         : N              
+data_reg_write[19]           : U28       : output : 2.5 V             :         : 5         : N              
+q_dmem[7]                    : V1        : output : 2.5 V             :         : 2         : N              
+aluinput[26]                 : V2        : output : 2.5 V             :         : 2         : N              
+aluinput[2]                  : V3        : output : 2.5 V             :         : 2         : N              
+data_reg_write[12]           : V4        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V5        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 2         :                
-sximmed[23]                  : V7        : output : 2.5 V             :         : 2         : N              
-data_writeTwo[12]            : V8        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 2         :                
+q_dmem[2]                    : V8        : output : 2.5 V             :         : 2         : N              
 VCCINT                       : V9        : power  :                   : 1.2V    :           :                
 GND                          : V10       : gnd    :                   :         :           :                
 VCCINT                       : V11       : power  :                   : 1.2V    :           :                
@@ -785,22 +785,22 @@ VCCINT                       : V17       : power  :                   : 1.2V    
 GND                          : V18       : gnd    :                   :         :           :                
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
-q_imem[28]                   : V21       : output : 2.5 V             :         : 5         : N              
-address_imem[8]              : V22       : output : 2.5 V             :         : 5         : N              
-address_imem[6]              : V23       : output : 2.5 V             :         : 5         : N              
-aluinput[26]                 : V24       : output : 2.5 V             :         : 5         : N              
-address_imem[10]             : V25       : output : 2.5 V             :         : 5         : N              
-data_readRegA[24]            : V26       : output : 2.5 V             :         : 5         : N              
-sximmed[5]                   : V27       : output : 2.5 V             :         : 5         : N              
-q_imem[5]                    : V28       : output : 2.5 V             :         : 5         : N              
-data_writeReg[25]            : W1        : output : 2.5 V             :         : 2         : N              
-q_imem[3]                    : W2        : output : 2.5 V             :         : 2         : N              
+data_readRegB[12]            : V21       : output : 2.5 V             :         : 5         : N              
+data[11]                     : V22       : output : 2.5 V             :         : 5         : N              
+q_dmem[27]                   : V23       : output : 2.5 V             :         : 5         : N              
+data_writeReg[19]            : V24       : output : 2.5 V             :         : 5         : N              
+address_dmem[5]              : V25       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V26       :        :                   :         : 5         :                
+aluinput[17]                 : V27       : output : 2.5 V             :         : 5         : N              
+aluinput[12]                 : V28       : output : 2.5 V             :         : 5         : N              
+address_imem[4]              : W1        : output : 2.5 V             :         : 2         : N              
+q_dmem[13]                   : W2        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : W3        :        :                   :         : 2         :                
-data_writeTwo[22]            : W4        : output : 2.5 V             :         : 2         : N              
+data_readRegB[21]            : W4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
 GND                          : W6        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W7        :        :                   :         : 2         :                
-data_writeTwo[20]            : W8        : output : 2.5 V             :         : 2         : N              
+sximmed[2]                   : W8        : output : 2.5 V             :         : 2         : N              
 GND                          : W9        : gnd    :                   :         :           :                
 VCCINT                       : W10       : power  :                   : 1.2V    :           :                
 GND                          : W11       : gnd    :                   :         :           :                
@@ -813,39 +813,39 @@ GND                          : W17       : gnd    :                   :         
 VCCINT                       : W18       : power  :                   : 1.2V    :           :                
 GND                          : W19       : gnd    :                   :         :           :                
 VCCINT                       : W20       : power  :                   : 1.2V    :           :                
-data_reg_write[27]           : W21       : output : 2.5 V             :         : 5         : N              
-q_imem[11]                   : W22       : output : 2.5 V             :         : 5         : N              
+data[12]                     : W21       : output : 2.5 V             :         : 5         : N              
+ctrl_writeReg[0]             : W22       : output : 2.5 V             :         : 5         : N              
 GND                          : W23       : gnd    :                   :         :           :                
 VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W25       :        :                   :         : 5         :                
-data_readRegB[25]            : W26       : output : 2.5 V             :         : 5         : N              
-enableTwo                    : W27       : output : 2.5 V             :         : 5         : N              
-data_readRegA[13]            : W28       : output : 2.5 V             :         : 5         : N              
+data_readRegA[19]            : W25       : output : 2.5 V             :         : 5         : N              
+aluinput[20]                 : W26       : output : 2.5 V             :         : 5         : N              
+aluinput[24]                 : W27       : output : 2.5 V             :         : 5         : N              
+aluinput[28]                 : W28       : output : 2.5 V             :         : 5         : N              
 GND+                         : Y1        :        :                   :         : 2         :                
 reset                        : Y2        : input  : 2.5 V             :         : 2         : N              
-data_readRegB[6]             : Y3        : output : 2.5 V             :         : 2         : N              
-data[16]                     : Y4        : output : 2.5 V             :         : 2         : N              
+address_imem[10]             : Y3        : output : 2.5 V             :         : 2         : N              
+q_imem[8]                    : Y4        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y5        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y7        :        :                   :         : 2         :                
+q_imem[2]                    : Y7        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
 VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y10       :        :                   :         : 3         :                
+data_writeTwo[15]            : Y10       : output : 2.5 V             :         : 3         : N              
 GND                          : Y11       : gnd    :                   :         :           :                
-data_reg_write[29]           : Y12       : output : 2.5 V             :         : 3         : N              
-data[23]                     : Y13       : output : 2.5 V             :         : 3         : N              
-data_readRegB[5]             : Y14       : output : 2.5 V             :         : 3         : N              
-data[5]                      : Y15       : output : 2.5 V             :         : 3         : N              
-q_imem[20]                   : Y16       : output : 2.5 V             :         : 4         : N              
-ctrl_readRegA[3]             : Y17       : output : 2.5 V             :         : 4         : N              
+address_dmem[0]              : Y12       : output : 2.5 V             :         : 3         : N              
+data_readRegA[9]             : Y13       : output : 2.5 V             :         : 3         : N              
+q_dmem[28]                   : Y14       : output : 2.5 V             :         : 3         : N              
+data_reg_write[13]           : Y15       : output : 2.5 V             :         : 3         : N              
+data_readRegA[21]            : Y16       : output : 2.5 V             :         : 4         : N              
+address_dmem[4]              : Y17       : output : 2.5 V             :         : 4         : N              
 GND                          : Y18       : gnd    :                   :         :           :                
-data_readRegB[18]            : Y19       : output : 2.5 V             :         : 4         : N              
+data_readRegB[24]            : Y19       : output : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
-address_dmem[0]              : Y22       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y23       :        :                   :         : 5         :                
+q_imem[23]                   : Y22       : output : 2.5 V             :         : 5         : N              
+ctrl_writeEnable             : Y23       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y24       :        :                   :         : 5         :                
-data[25]                     : Y25       : output : 2.5 V             :         : 5         : N              
-aluinput[4]                  : Y26       : output : 2.5 V             :         : 5         : N              
+data_writeReg[28]            : Y25       : output : 2.5 V             :         : 5         : N              
+address_dmem[7]              : Y26       : output : 2.5 V             :         : 5         : N              
 GND+                         : Y27       :        :                   :         : 5         :                
 GND+                         : Y28       :        :                   :         : 5         :                

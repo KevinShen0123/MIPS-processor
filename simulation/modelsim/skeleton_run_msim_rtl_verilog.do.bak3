@@ -27,7 +27,6 @@ vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/d_f.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/write_port.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/skeleton_test.v}
-vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/comp32.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/alu.v}
 vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/csa.v}
 

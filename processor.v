@@ -69,14 +69,16 @@ module processor(
     ctrl_readRegB,                  // O: Register to read from port B of regfile
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
-    data_readRegB,data_reg_write	,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow
+    data_readRegB,
+	 data_reg_write	,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow
 
 );
 
 
   
 
-
+	wire is_jal,is_bex, is_setx;
+	wire[31:0]pc_in1;
 
     output [31:0] data_writeTwo;
     // Control signals
@@ -173,7 +175,7 @@ module processor(
 	
 	assign data=data_readRegB;
 	
-	
+
 	
 	//define is_j
 	cmp cmp6(is_j,q_imem[31:27],5'b00001);
@@ -205,7 +207,7 @@ module processor(
 	assign pc_in1[31:27] = is_j_cbex ?5'b00000 :is_jr?data_readRegB[31:27]:pc_plusone[31:27] ;
 	assign pc_in1[26:0] = is_j_cbex ?q_imem[26:0]:is_jal ?q_imem[26:0]:is_jr?data_readRegB[26:0]:pc_plusone[26:0];
 	
-	wire [31:0] pc_in1, pc_in2;
+	wire [31:0] pc_in2;
 	alu alu_pc_in2(.data_operandA(sximmed), .data_operandB(pc_plusone), .ctrl_ALUopcode(5'b00000),.data_result(pc_in2));
 	
 	
