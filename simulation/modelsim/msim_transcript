@@ -12,269 +12,269 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/shiftright.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:26 on Nov 27,2022
+# Start time: 18:21:11 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/shiftright.v 
 # -- Compiling module shiftright
 # 
 # Top level modules:
 # 	shiftright
-# End time: 15:23:26 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:11 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/shiftleft.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:26 on Nov 27,2022
+# Start time: 18:21:12 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/shiftleft.v 
 # -- Compiling module shiftleft
 # 
 # Top level modules:
 # 	shiftleft
-# End time: 15:23:26 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:12 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/orop.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:26 on Nov 27,2022
+# Start time: 18:21:12 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/orop.v 
 # -- Compiling module orop
 # 
 # Top level modules:
 # 	orop
-# End time: 15:23:26 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:12 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/mux.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:26 on Nov 27,2022
+# Start time: 18:21:12 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/mux.v 
 # -- Compiling module mux
 # 
 # Top level modules:
 # 	mux
-# End time: 15:23:26 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:12 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/andop.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:27 on Nov 27,2022
+# Start time: 18:21:12 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/andop.v 
 # -- Compiling module andop
 # 
 # Top level modules:
 # 	andop
-# End time: 15:23:27 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:12 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/clock_div4.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:27 on Nov 27,2022
+# Start time: 18:21:12 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/clock_div4.v 
 # -- Compiling module clk_div4
 # 
 # Top level modules:
 # 	clk_div4
-# End time: 15:23:27 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:12 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/regfile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:27 on Nov 27,2022
+# Start time: 18:21:12 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/regfile.v 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 15:23:27 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:12 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/processor.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:27 on Nov 27,2022
+# Start time: 18:21:12 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/processor.v 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 15:23:27 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:12 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/dmem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:27 on Nov 27,2022
+# Start time: 18:21:12 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/dmem.v 
 # -- Compiling module dmem
 # 
 # Top level modules:
 # 	dmem
-# End time: 15:23:27 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:12 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/imem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:27 on Nov 27,2022
+# Start time: 18:21:12 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/imem.v 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 15:23:27 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:12 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/dffe.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:27 on Nov 27,2022
+# Start time: 18:21:12 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/dffe.v 
 # -- Compiling module dffe_ref
 # 
 # Top level modules:
 # 	dffe_ref
-# End time: 15:23:27 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:13 on Nov 27,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/five_to_thirtytwo_decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:27 on Nov 27,2022
+# Start time: 18:21:13 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/five_to_thirtytwo_decoder.v 
 # -- Compiling module five_to_thirtytwo_decoder
 # 
 # Top level modules:
 # 	five_to_thirtytwo_decoder
-# End time: 15:23:27 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:13 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/full_adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:27 on Nov 27,2022
+# Start time: 18:21:13 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/full_adder.v 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 15:23:27 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:13 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/pc.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:28 on Nov 27,2022
+# Start time: 18:21:13 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/pc.v 
 # -- Compiling module pc
 # 
 # Top level modules:
 # 	pc
-# End time: 15:23:28 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:13 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/sixteen_bit_adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:28 on Nov 27,2022
+# Start time: 18:21:13 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/sixteen_bit_adder.v 
 # -- Compiling module sixteen_bit_adder
 # 
 # Top level modules:
 # 	sixteen_bit_adder
-# End time: 15:23:28 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:13 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/sx.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:28 on Nov 27,2022
+# Start time: 18:21:13 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/sx.v 
 # -- Compiling module sx
 # 
 # Top level modules:
 # 	sx
-# End time: 15:23:28 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:13 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/three_to_eight_decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:28 on Nov 27,2022
+# Start time: 18:21:13 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/three_to_eight_decoder.v 
 # -- Compiling module three_to_eight_decoder
 # 
 # Top level modules:
 # 	three_to_eight_decoder
-# End time: 15:23:28 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:13 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/two_to_four_decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:28 on Nov 27,2022
+# Start time: 18:21:13 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/two_to_four_decoder.v 
 # -- Compiling module two_to_four_decoder
 # 
 # Top level modules:
 # 	two_to_four_decoder
-# End time: 15:23:28 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:13 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/cmp.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:28 on Nov 27,2022
+# Start time: 18:21:13 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/cmp.v 
 # -- Compiling module cmp
 # 
 # Top level modules:
 # 	cmp
-# End time: 15:23:28 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:13 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/d_f.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:28 on Nov 27,2022
+# Start time: 18:21:13 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/d_f.v 
 # -- Compiling module d_f
 # 
 # Top level modules:
 # 	d_f
-# End time: 15:23:28 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:13 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/write_port.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:28 on Nov 27,2022
+# Start time: 18:21:14 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/write_port.v 
 # -- Compiling module write_port
 # 
 # Top level modules:
 # 	write_port
-# End time: 15:23:28 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:14 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/skeleton_test.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:28 on Nov 27,2022
+# Start time: 18:21:14 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/skeleton_test.v 
 # -- Compiling module skeleton_test
 # 
 # Top level modules:
 # 	skeleton_test
-# End time: 15:23:28 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:14 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/comp32.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:29 on Nov 27,2022
+# Start time: 18:21:14 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/comp32.v 
 # -- Compiling module comp32
 # 
 # Top level modules:
 # 	comp32
-# End time: 15:23:29 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:14 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/alu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:29 on Nov 27,2022
+# Start time: 18:21:14 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/alu.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 15:23:29 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:14 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/csa.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:29 on Nov 27,2022
+# Start time: 18:21:14 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/csa.v 
 # -- Compiling module csa
 # 
 # Top level modules:
 # 	csa
-# End time: 15:23:29 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:14 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4 {C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:23:29 on Nov 27,2022
+# Start time: 18:21:14 on Nov 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/zs149/Documents/github/550-cp4" C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v 
 # -- Compiling module skeleton_test_tb
 # 
 # Top level modules:
 # 	skeleton_test_tb
-# End time: 15:23:29 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 18:21:14 on Nov 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  skeleton_test_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" skeleton_test_tb 
-# Start time: 15:23:29 on Nov 27,2022
+# Start time: 18:21:14 on Nov 27,2022
 # Loading work.skeleton_test_tb
 # Loading work.skeleton_test
 # Loading work.clk_div4
@@ -305,9 +305,9 @@
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # Loading work.d_f
 # Loading work.dffe_ref
-# ** Warning: (vsim-3015) C:/Users/zs149/Documents/github/550-cp4/processor.v(118): [PCDPC] - Port size (5) does not match connection size (1) for port 'ctrl_shiftamt'. The port definition is at: C:/Users/zs149/Documents/github/550-cp4/alu.v(1).
+# ** Warning: (vsim-3015) C:/Users/zs149/Documents/github/550-cp4/processor.v(120): [PCDPC] - Port size (5) does not match connection size (1) for port 'ctrl_shiftamt'. The port definition is at: C:/Users/zs149/Documents/github/550-cp4/alu.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/alu1 File: C:/Users/zs149/Documents/github/550-cp4/alu.v
-# ** Warning: (vsim-3015) C:/Users/zs149/Documents/github/550-cp4/processor.v(118): [PCDPC] - Port size (1) does not match connection size (5) for port 'isNotEqual'. The port definition is at: C:/Users/zs149/Documents/github/550-cp4/alu.v(1).
+# ** Warning: (vsim-3015) C:/Users/zs149/Documents/github/550-cp4/processor.v(120): [PCDPC] - Port size (1) does not match connection size (5) for port 'isNotEqual'. The port definition is at: C:/Users/zs149/Documents/github/550-cp4/alu.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/alu1 File: C:/Users/zs149/Documents/github/550-cp4/alu.v
 # ** Warning: (vsim-3015) C:/Users/zs149/Documents/github/550-cp4/shiftleft.v(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/zs149/Documents/github/550-cp4/mux.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/alu1/left/mux0_0 File: C:/Users/zs149/Documents/github/550-cp4/mux.v
@@ -500,12 +500,12 @@
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/rd_rs_comp32/alu_comp32/left/zero_for_fifth_loop[14]/mux4_0 File: C:/Users/zs149/Documents/github/550-cp4/mux.v
 # ** Warning: (vsim-3015) C:/Users/zs149/Documents/github/550-cp4/shiftleft.v(33): [PCDPC] - Port size (1) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/zs149/Documents/github/550-cp4/mux.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/rd_rs_comp32/alu_comp32/left/zero_for_fifth_loop[15]/mux4_0 File: C:/Users/zs149/Documents/github/550-cp4/mux.v
-# ** Warning: (vsim-3017) C:/Users/zs149/Documents/github/550-cp4/processor.v(203): [TFMPC] - Too few port connections. Expected 8, found 4.
+# ** Warning: (vsim-3017) C:/Users/zs149/Documents/github/550-cp4/processor.v(206): [TFMPC] - Too few port connections. Expected 8, found 4.
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/alu_less_than File: C:/Users/zs149/Documents/github/550-cp4/alu.v
-# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(203): [TFMPC] - Missing connection for port 'ctrl_shiftamt'.
-# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(203): [TFMPC] - Missing connection for port 'data_result'.
-# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(203): [TFMPC] - Missing connection for port 'isNotEqual'.
-# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(203): [TFMPC] - Missing connection for port 'overflow'.
+# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(206): [TFMPC] - Missing connection for port 'ctrl_shiftamt'.
+# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(206): [TFMPC] - Missing connection for port 'data_result'.
+# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(206): [TFMPC] - Missing connection for port 'isNotEqual'.
+# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(206): [TFMPC] - Missing connection for port 'overflow'.
 # ** Warning: (vsim-3015) C:/Users/zs149/Documents/github/550-cp4/shiftleft.v(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/zs149/Documents/github/550-cp4/mux.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/alu_less_than/left/mux0_0 File: C:/Users/zs149/Documents/github/550-cp4/mux.v
 # ** Warning: (vsim-3015) C:/Users/zs149/Documents/github/550-cp4/shiftleft.v(16): [PCDPC] - Port size (1) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/zs149/Documents/github/550-cp4/mux.v(1).
@@ -635,12 +635,12 @@
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/r30_0_comp32/alu_comp32/left/zero_for_fifth_loop[14]/mux4_0 File: C:/Users/zs149/Documents/github/550-cp4/mux.v
 # ** Warning: (vsim-3015) C:/Users/zs149/Documents/github/550-cp4/shiftleft.v(33): [PCDPC] - Port size (1) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/zs149/Documents/github/550-cp4/mux.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/r30_0_comp32/alu_comp32/left/zero_for_fifth_loop[15]/mux4_0 File: C:/Users/zs149/Documents/github/550-cp4/mux.v
-# ** Warning: (vsim-3017) C:/Users/zs149/Documents/github/550-cp4/processor.v(215): [TFMPC] - Too few port connections. Expected 8, found 4.
+# ** Warning: (vsim-3017) C:/Users/zs149/Documents/github/550-cp4/processor.v(218): [TFMPC] - Too few port connections. Expected 8, found 4.
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/alu_pc_in2 File: C:/Users/zs149/Documents/github/550-cp4/alu.v
-# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(215): [TFMPC] - Missing connection for port 'ctrl_shiftamt'.
-# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(215): [TFMPC] - Missing connection for port 'isNotEqual'.
-# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(215): [TFMPC] - Missing connection for port 'isLessThan'.
-# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(215): [TFMPC] - Missing connection for port 'overflow'.
+# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(218): [TFMPC] - Missing connection for port 'ctrl_shiftamt'.
+# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(218): [TFMPC] - Missing connection for port 'isNotEqual'.
+# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(218): [TFMPC] - Missing connection for port 'isLessThan'.
+# ** Warning: (vsim-3722) C:/Users/zs149/Documents/github/550-cp4/processor.v(218): [TFMPC] - Missing connection for port 'overflow'.
 # ** Warning: (vsim-3015) C:/Users/zs149/Documents/github/550-cp4/shiftleft.v(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/zs149/Documents/github/550-cp4/mux.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_processor/alu_pc_in2/left/mux0_0 File: C:/Users/zs149/Documents/github/550-cp4/mux.v
 # ** Warning: (vsim-3015) C:/Users/zs149/Documents/github/550-cp4/shiftleft.v(16): [PCDPC] - Port size (1) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/zs149/Documents/github/550-cp4/mux.v(1).
@@ -707,17 +707,15 @@
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: zs149  Hostname: VCM-28359  ProcessID: 1632
-#           Attempting to use alternate WLF file "./wlftcdzv16".
+#           Attempting to use alternate WLF file "./wlft9r6ebh".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftcdzv16
+#           Using alternate file: ./wlft9r6ebh
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 #                    0 << Starting the Simulation >>
-# ** Note: $stop    : C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v(45)
+# ** Note: $stop    : C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v(47)
 #    Time: 4020 ns  Iteration: 1  Instance: /skeleton_test_tb
-# Break in Module skeleton_test_tb at C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v line 45
-# End time: 15:26:23 on Nov 27,2022, Elapsed time: 0:02:54
-# Errors: 0, Warnings: 208
+# Break in Module skeleton_test_tb at C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v line 47

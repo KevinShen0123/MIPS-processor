@@ -11,8 +11,10 @@
 
 module skeleton_test(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
 address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,ctrl_writeReg,ctrl_readRegA, ctrl_readRegB,
-data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow,pc_in);
-	output [31:0]pc_in;
+data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow,is_j, is_jal,is_bex, is_setx, is_bne, is_blt,pc_in,pc_in1,pc_out,rd_less_than_rs);
+	output rd_less_than_rs;
+	output is_j, is_jal,is_bex, is_setx, is_bne, is_blt;
+	output [31:0]pc_in,pc_in1,pc_out;
 	output enableTwo;
 	output overflow;
 	output[31:0]aluinput;
@@ -104,7 +106,10 @@ data_writeReg,data_readRegA, data_readRegB,data_reg_write,aluinput, alu_opcode,s
         data_writeReg,                  // O: Data to write to for regfile
         data_readRegA,                  // I: Data from port A of regfile
         data_readRegB,
-data_reg_write	,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow,pc_in
+data_reg_write	,aluinput, 
+alu_opcode,sximmed,data_writeTwo,enableTwo,overflow,is_j,
+ is_jal,is_bex, is_setx, is_bne, is_blt,pc_in,pc_in1,pc_out,rd_less_than_rs
+ 
 	  // I: Data from port B of regfile
     );
 

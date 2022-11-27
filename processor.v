@@ -70,15 +70,17 @@ module processor(
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
     data_readRegB,
-	 data_reg_write	,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow,pc_in
+	 data_reg_write	,aluinput, alu_opcode,sximmed,data_writeTwo,enableTwo,overflow, is_j, is_jal,
+	 is_bex, is_setx, is_bne, is_blt,pc_in,pc_in1,pc_out,rd_less_than_rs
 
 );
 
 
-  
+  output is_j, is_jal,is_bex, is_setx, is_bne, is_blt;//change later
+  output [31:0]pc_in1;
 
-	wire is_jal,is_bex, is_setx;
-	wire[31:0]pc_in1;
+	//wire is_j, is_jal,is_bex, is_setx, is_bne, is_blt;
+	//wire[31:0]pc_in1;
 
     output [31:0] data_writeTwo;
     // Control signals
@@ -109,8 +111,8 @@ module processor(
 
     //PC & PC + 4
 
-     wire [31:0] pc_plusone, pc_out, insn_out;
-	  output [31:0] pc_in;
+     wire [31:0] pc_plusone, insn_out;
+	  output [31:0] pc_in,pc_out;
 	  wire dummy,dummy2;
 	  wire[4:0] dummy1; 
 
@@ -126,7 +128,7 @@ module processor(
 	 cmp c2(F2,q_imem[31:27],5'b00101);
 	 cmp c3(F3,q_imem[31:27],5'b01000);
 	  // ctrl_writeEnable = 1 when r type, addi,lw
-	 or or1(ctrl_writeEnable,F1,F2,F3);
+
 	  wire f1,f2,f3,f4,f5,f6,f7,f8,f9,f10;
 	 cmp cmp1(f1,q_imem[31:27],5'b00101);
 	  cmp cmp2(f2,q_imem[31:27],5'b00111);
@@ -161,7 +163,7 @@ module processor(
 	 alu my_alu(data_readRegA, aluinput, alu_opcode, q_imem[11:7],data_reg_write, isNotEqual, isLessThan, overflow);//call alu
 	 wire alu_flag;
 	 output enableTwo;
-     assign alu_flag=f2?0:f3?0:1;//decide whether we need alu in R type or not, if sw or lw, we do not need alu
+     assign alu_flag=F1?1:F2?1:0;//if it is R type or addi, use alu
 	 and and1(enableTwo,alu_flag, overflow);// 
 	 cmp cmp4(f4,q_imem[31:27],5'b00000);
 	 cmp cmp5(f5,q_imem[6:2],5'b00000);
@@ -173,7 +175,7 @@ module processor(
 	 //assign data=data_readRegB;
 	 assign wren=sw_yes;
 	 assign ctrl_writeReg = enableTwo?5'h1E:is_jal?5'h1F:is_setx?5'h1E:q_imem[26:22];
-	 assign data_writeReg=alu_flag?overflow?data_writeTwo:data_reg_write:lw_yes?q_dmem:is_jal?pc_plusone:is_setx?sign_extendT:data_reg_write;
+	 
          //regfile reg1(clock, enableTwo, reset, 5'h1E,
 	//   q_imem[26:22], 5'h00, data_writeTwo,s1,s2);// If we need alu and overflow happens, we call regfile to change r30 register by definition
 	
@@ -197,7 +199,8 @@ module processor(
 	
 	//rd rs compare
 	wire [1:0] rd_rs_comp, r30_zero_comp;
-	wire rd_not_equal_rs, rd_less_than_rs, r30_not_zero, correct_bex, is_j_cbex;
+	wire rd_not_equal_rs,  r30_not_zero, correct_bex, is_j_cbex;
+	output rd_less_than_rs;
 	comp32 rd_rs_comp32(rd_rs_comp, data_readRegA, data_readRegB);
 	xor (rd_not_equal_rs, rd_rs_comp[0], rd_rs_comp[1]);
 	alu alu_less_than(.data_operandA(data_readRegA), .data_operandB(data_readRegB), .ctrl_ALUopcode(5'b00001), .isLessThan(rd_less_than_rs));
@@ -208,14 +211,14 @@ module processor(
 	and (correct_bex, is_bex, r30_not_zero);
 	or (is_j_cbex, correct_bex, is_j);
 	
-	assign pc_in1[31:27] = is_j_cbex ?5'b00000 :is_jr?data_readRegB[31:27]:pc_plusone[31:27] ;
+	assign pc_in1[31:27] = is_j_cbex ?5'b00000 :is_jal? 5'b00000:is_jr?data_readRegB[31:27]:pc_plusone[31:27] ;
 	assign pc_in1[26:0] = is_j_cbex ?q_imem[26:0]:is_jal ?q_imem[26:0]:is_jr?data_readRegB[26:0]:pc_plusone[26:0];
 	
 	wire [31:0] pc_in2;
 	alu alu_pc_in2(.data_operandA(sximmed), .data_operandB(pc_plusone), .ctrl_ALUopcode(5'b00000),.data_result(pc_in2));
 	
 	
-	assign pc_in = is_bne?(rd_not_equal_rs? pc_in2:pc_plusone):is_blt?(rd_less_than_rs?pc_in2:pc_plusone):pc_plusone;
-	
-	
+	assign pc_in = is_bne?(rd_not_equal_rs? pc_in2:pc_plusone):is_blt?(rd_less_than_rs?pc_in2:pc_plusone):is_setx?pc_plusone:pc_in1;
+	or or1(ctrl_writeEnable,F1,F2,F3,is_setx,is_jal);
+	assign data_writeReg=alu_flag?(overflow?data_writeTwo:data_reg_write):lw_yes?q_dmem:is_jal?pc_plusone:is_setx?sign_extendT:data_reg_write;
 endmodule

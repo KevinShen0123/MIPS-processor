@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/zs149/Documents/github/550-cp4/simulation/modelsim
 valu
-Z1 !s110 1669580609
+Z1 !s110 1669591274
 !i10b 1
 !s100 j3D<H_BKd2B=1<l;0<_Hg2
 I^n<0I=?aXf9?0K36mJD_62
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1669580609.000000
+Z5 !s108 1669591274.000000
 !s107 C:/Users/zs149/Documents/github/550-cp4/alu.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/alu.v|
 !i113 1
@@ -31,7 +31,7 @@ Z6 o-vlog01compat -work work
 Z7 !s92 -vlog01compat -work work +incdir+C:/Users/zs149/Documents/github/550-cp4
 Z8 tCvgOpt 0
 vandop
-Z9 !s110 1669580607
+Z9 !s110 1669591272
 !i10b 1
 !s100 mNJ]RTO48c`PBcJB5B<D=0
 IA9ZRKA[HCI8Mb2jkcZVQG0
@@ -45,7 +45,7 @@ R4
 r1
 !s85 0
 31
-Z10 !s108 1669580607.000000
+Z10 !s108 1669591272.000000
 !s107 C:/Users/zs149/Documents/github/550-cp4/andop.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/andop.v|
 !i113 1
@@ -75,7 +75,7 @@ R6
 R7
 R8
 vcmp
-Z11 !s110 1669580608
+Z11 !s110 1669591273
 !i10b 1
 !s100 E[o@O`;YHmH:6kk_6H3V]1
 IDX]o0_TncnLAJ7JFJnEV40
@@ -89,7 +89,7 @@ R4
 r1
 !s85 0
 31
-Z12 !s108 1669580608.000000
+Z12 !s108 1669591273.000000
 !s107 C:/Users/zs149/Documents/github/550-cp4/cmp.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/cmp.v|
 !i113 1
@@ -163,7 +163,7 @@ R6
 R7
 R8
 vdffe_ref
-R9
+R11
 !i10b 1
 !s100 m2?1a8:`omUTO_3UK>MQz1
 I^Az9dPNzJ9bah=7jeU54H2
@@ -207,7 +207,7 @@ R6
 R7
 R8
 vfive_to_thirtytwo_decoder
-R9
+R11
 !i10b 1
 !s100 fX8g7:L^Snhk4UfNKm?`k0
 I@9DBF?o;P=Wl7kL?zQM[N0
@@ -221,7 +221,7 @@ R4
 r1
 !s85 0
 31
-R10
+R12
 !s107 C:/Users/zs149/Documents/github/550-cp4/five_to_thirtytwo_decoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/five_to_thirtytwo_decoder.v|
 !i113 1
@@ -229,7 +229,7 @@ R6
 R7
 R8
 vfull_adder
-R9
+R11
 !i10b 1
 !s100 Q:bk2KgJNY;m2ZOFz4^KT3
 IW@mbW1F1jKLaiS`EeV:8j3
@@ -243,7 +243,7 @@ R4
 r1
 !s85 0
 31
-R10
+R12
 !s107 C:/Users/zs149/Documents/github/550-cp4/full_adder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/full_adder.v|
 !i113 1
@@ -253,11 +253,11 @@ R8
 vimem
 R9
 !i10b 1
-!s100 nKoSdQnNDBX4daM99Q7BC3
-IDYMkP5`Ljk?oGj[GWVCI>2
+!s100 @iJ@U0HK^07A4EYcRCE^83
+IKE7QAHg:n;YY><5jAI9PV2
 R2
 R0
-w1669580353
+w1669590327
 8C:/Users/zs149/Documents/github/550-cp4/imem.v
 FC:/Users/zs149/Documents/github/550-cp4/imem.v
 R14
@@ -273,7 +273,7 @@ R6
 R7
 R8
 vmux
-Z16 !s110 1669580606
+R9
 !i10b 1
 !s100 [XzK7SZbA:5BNSY>P=fTd0
 IadKJh^8G3KBS@Te7E<5DU1
@@ -287,7 +287,7 @@ R4
 r1
 !s85 0
 31
-Z17 !s108 1669580606.000000
+R10
 !s107 C:/Users/zs149/Documents/github/550-cp4/mux.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/mux.v|
 !i113 1
@@ -295,7 +295,7 @@ R6
 R7
 R8
 vorop
-R16
+R9
 !i10b 1
 !s100 f;YJe?Gn?a84HNE_zNWXX2
 I4^X]Xia8G<1]Q;z;3djBM0
@@ -309,7 +309,7 @@ R4
 r1
 !s85 0
 31
-R17
+R10
 !s107 C:/Users/zs149/Documents/github/550-cp4/orop.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/orop.v|
 !i113 1
@@ -341,11 +341,11 @@ R8
 vprocessor
 R9
 !i10b 1
-!s100 @oi3Ij[>5DMAhBDG5BdKh3
-IE9APcJ9h=T`Mi7B9mSW5@0
+!s100 lTINP0zkPz_4RhgDoWYJb0
+I@OD`=jeGjib?:2od[7hF?3
 R2
 R0
-w1669580559
+w1669591191
 8C:/Users/zs149/Documents/github/550-cp4/processor.v
 FC:/Users/zs149/Documents/github/550-cp4/processor.v
 L0 50
@@ -383,7 +383,7 @@ R6
 R7
 R8
 vshiftleft
-R16
+R9
 !i10b 1
 !s100 g^l>z`8[nbj_6M@@JnD9K3
 IZfPf>S34PXY>cLj]z?JM[2
@@ -397,7 +397,7 @@ R4
 r1
 !s85 0
 31
-R17
+R10
 !s107 C:/Users/zs149/Documents/github/550-cp4/shiftleft.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/shiftleft.v|
 !i113 1
@@ -405,7 +405,7 @@ R6
 R7
 R8
 vshiftright
-R16
+!s110 1669591271
 !i10b 1
 !s100 mhcmdQSIfQ]JFcG0>S>FW2
 IDbmkJeY1SgZf^W]oGnZS]2
@@ -419,7 +419,7 @@ R4
 r1
 !s85 0
 31
-R17
+!s108 1669591271.000000
 !s107 C:/Users/zs149/Documents/github/550-cp4/shiftright.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/shiftright.v|
 !i113 1
@@ -449,13 +449,13 @@ R6
 R7
 R8
 vskeleton_test
-R11
+R1
 !i10b 1
-!s100 kTglnPFNnFjmCISTWWQZW0
-IGS0S4:ZEYhMc1f`kMnk9;0
+!s100 5H9E;7AjiSP`4h[XnAEaN2
+I[:M51aj_gnmHjF<=mWZi62
 R2
 R0
-Z18 w1669580050
+w1669591236
 8C:/Users/zs149/Documents/github/550-cp4/skeleton_test.v
 FC:/Users/zs149/Documents/github/550-cp4/skeleton_test.v
 L0 12
@@ -463,7 +463,7 @@ R4
 r1
 !s85 0
 31
-R12
+R5
 !s107 C:/Users/zs149/Documents/github/550-cp4/skeleton_test.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/skeleton_test.v|
 !i113 1
@@ -473,11 +473,11 @@ R8
 vskeleton_test_tb
 R1
 !i10b 1
-!s100 BNM<OHo1FO@CAQHYRASIO1
-Ib1]D7595eIU:m^5j5]eI62
+!s100 z2]c@In9NkZ6mRhhY2l@P0
+IaDYh7YY107?lAm]:[iDOe0
 R2
 R0
-R18
+w1669591255
 8C:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v
 FC:/Users/zs149/Documents/github/550-cp4/skeleton_test_tb.v
 L0 3
@@ -559,7 +559,7 @@ R6
 R7
 R8
 vwrite_port
-R11
+R1
 !i10b 1
 !s100 f61C0Y^0[o:3QCTHTfAGV3
 I=zUUo^Xk0h3E;b7Uj1<2n1
@@ -573,7 +573,7 @@ R4
 r1
 !s85 0
 31
-R12
+R5
 !s107 C:/Users/zs149/Documents/github/550-cp4/write_port.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zs149/Documents/github/550-cp4|C:/Users/zs149/Documents/github/550-cp4/write_port.v|
 !i113 1
